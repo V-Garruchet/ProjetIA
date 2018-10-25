@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Ex1_Questionnaire;
 
 namespace WindowsFormsApplication1
 {
@@ -26,7 +27,14 @@ namespace WindowsFormsApplication1
 
         public static void ouvrirnouveauform()
         {
-            Application.Run(new FormQuestions());
+            FormQuestions form1 = new FormQuestions();
+            Question Q1 = new Question(0);
+            form1.lbQ.Text = Q1.QuestionText;
+            form1.cbRep1.Text = Q1.Answers[0];
+            form1.cbRep2.Text = Q1.Answers[1];
+            form1.cbRep3.Text = Q1.Answers[2];
+            form1.cbRep4.Text = Q1.Answers[3];
+            Application.Run(form1);
         }
 
     }

@@ -58,6 +58,7 @@
             this.btVerif.TabIndex = 5;
             this.btVerif.Text = "Vérifier";
             this.btVerif.UseVisualStyleBackColor = true;
+            this.btVerif.Click += new System.EventHandler(this.btVerif_Click);
             // 
             // btSuivant
             // 
@@ -86,6 +87,7 @@
             // 
             this.cbRep4.AutoSize = true;
             this.cbRep4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbRep4.ForeColor = System.Drawing.SystemColors.ControlText;
             this.cbRep4.Location = new System.Drawing.Point(32, 224);
             this.cbRep4.Name = "cbRep4";
             this.cbRep4.Size = new System.Drawing.Size(102, 24);
@@ -146,13 +148,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lbQ;
-        private System.Windows.Forms.Button btVerif;
+        public System.Windows.Forms.Label lbQ;
+        public System.Windows.Forms.Button btVerif;
         private System.Windows.Forms.Button btSuivant;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.CheckBox cbRep4;
-        private System.Windows.Forms.CheckBox cbRep3;
-        private System.Windows.Forms.CheckBox cbRep2;
-        private System.Windows.Forms.CheckBox cbRep1;
+        public System.Windows.Forms.CheckBox cbRep4;
+        public System.Windows.Forms.CheckBox cbRep3;
+        public System.Windows.Forms.CheckBox cbRep2;
+        public System.Windows.Forms.CheckBox cbRep1;
     }
 }

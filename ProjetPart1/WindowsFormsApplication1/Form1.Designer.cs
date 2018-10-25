@@ -65,7 +65,7 @@
             this.Controls.Add(this.btStart);
             this.Controls.Add(this.lbMessageStart);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Bienvenue jeune padawan";
             this.ResumeLayout(false);
             this.PerformLayout();
 

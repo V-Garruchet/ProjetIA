@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Questions>
-  <Question Id="1">
+	
+    <Question Id="0">
     <QuestionText>Comment s'appelle M. Salotti ?</QuestionText>
     <Answers>
       <A>Michel</A>
@@ -9,5 +10,228 @@
       <D>Jacques</D>
     </Answers>
     <GoodAnswer>B</GoodAnswer>
-  </Question>
+    </Question>
+	  
+    <Question Id="1">
+    <QuestionText>Comment s'appelle M. 1 ?</QuestionText>
+    <Answers>
+      <A>Michel</A>
+      <B>Jean-Marc</B>
+      <C>Denis</C>
+      <D>Jacques</D>
+    </Answers>
+    <GoodAnswer>B</GoodAnswer>
+	</Question>
+	  
+		
+	<Question Id="2">
+    <QuestionText>Comment s'appelle M. 2 ?</QuestionText>
+    <Answers>
+      <A>Michel</A>
+      <B>Jean-Marc</B>
+      <C>Denis</C>
+      <D>Jacques</D>
+    </Answers>
+    <GoodAnswer>B</GoodAnswer>
+	</Question>
+		
+    <Question Id="3">
+    <QuestionText>Comment s'appelle M. 3 ?</QuestionText>
+    <Answers>
+      <A>Michel</A>
+      <B>Jean-Marc</B>
+      <C>Denis</C>
+      <D>Jacques</D>
+    </Answers>
+    <GoodAnswer>B</GoodAnswer>
+	</Question>
+		
+    <Question Id="4">
+    <QuestionText>Comment s'appelle M. 4 ?</QuestionText>
+    <Answers>
+      <A>Michel</A>
+      <B>Jean-Marc</B>
+      <C>Denis</C>
+      <D>Jacques</D>
+    </Answers>
+    <GoodAnswer>B</GoodAnswer>
+	</Question>
+		
+    <Question Id="5">
+    <QuestionText>Comment s'appelle M. 5 ?</QuestionText>
+    <Answers>
+      <A>Michel</A>
+      <B>Jean-Marc</B>
+      <C>Denis</C>
+      <D>Jacques</D>
+    </Answers>
+    <GoodAnswer>B</GoodAnswer>
+	</Question>
+		
+    <Question Id="6">
+    <QuestionText>Comment s'appelle M. 6 ?</QuestionText>
+    <Answers>
+      <A>Michel</A>
+      <B>Jean-Marc</B>
+      <C>Denis</C>
+      <D>Jacques</D>
+    </Answers>
+    <GoodAnswer>B</GoodAnswer>
+	</Question>
+	  
+    <Question Id="7">
+    <QuestionText>Comment s'appelle M. 7 ?</QuestionText>
+    <Answers>
+      <A>Michel</A>
+      <B>Jean-Marc</B>
+      <C>Denis</C>
+      <D>Jacques</D>
+    </Answers>
+    <GoodAnswer>B</GoodAnswer>
+	</Question>
+	  
+    <Question Id="8">
+    <QuestionText>Comment s'appelle M. 8 ?</QuestionText>
+    <Answers>
+      <A>Michel</A>
+      <B>Jean-Marc</B>
+      <C>Denis</C>
+      <D>Jacques</D>
+    </Answers>
+    <GoodAnswer>B</GoodAnswer>
+	</Question>
+	  
+    <Question Id="9">
+    <QuestionText>Comment s'appelle M. 9 ?</QuestionText>
+    <Answers>
+      <A>Michel</A>
+      <B>Jean-Marc</B>
+      <C>Denis</C>
+      <D>Jacques</D>
+    </Answers>
+    <GoodAnswer>B</GoodAnswer>
+	</Question>
+		
+    <Question Id="10">
+    <QuestionText>Comment s'appelle M. 10 ?</QuestionText>
+    <Answers>
+      <A>Michel</A>
+      <B>Jean-Marc</B>
+      <C>Denis</C>
+      <D>Jacques</D>
+    </Answers>
+    <GoodAnswer>B</GoodAnswer>
+	</Question>
+	  
+    <Question Id="11">
+    <QuestionText>Comment s'appelle M. 11 ?</QuestionText>
+    <Answers>
+      <A>Michel</A>
+      <B>Jean-Marc</B>
+      <C>Denis</C>
+      <D>Jacques</D>
+    </Answers>
+    <GoodAnswer>B</GoodAnswer>
+	</Question>
+	  
+		
+	<Question Id="12">
+    <QuestionText>Comment s'appelle M. 12 ?</QuestionText>
+    <Answers>
+      <A>Michel</A>
+      <B>Jean-Marc</B>
+      <C>Denis</C>
+      <D>Jacques</D>
+    </Answers>
+    <GoodAnswer>B</GoodAnswer>
+	</Question>
+		
+    <Question Id="13">
+    <QuestionText>Comment s'appelle M. 13 ?</QuestionText>
+    <Answers>
+      <A>Michel</A>
+      <B>Jean-Marc</B>
+      <C>Denis</C>
+      <D>Jacques</D>
+    </Answers>
+    <GoodAnswer>B</GoodAnswer>
+	</Question>
+		
+    <Question Id="14">
+    <QuestionText>Comment s'appelle M. 14 ?</QuestionText>
+    <Answers>
+      <A>Michel</A>
+      <B>Jean-Marc</B>
+      <C>Denis</C>
+      <D>Jacques</D>
+    </Answers>
+    <GoodAnswer>B</GoodAnswer>
+	</Question>
+		
+    <Question Id="15">
+    <QuestionText>Comment s'appelle M. 15 ?</QuestionText>
+    <Answers>
+      <A>Michel</A>
+      <B>Jean-Marc</B>
+      <C>Denis</C>
+      <D>Jacques</D>
+    </Answers>
+    <GoodAnswer>B</GoodAnswer>
+	</Question>
+		
+    <Question Id="16">
+    <QuestionText>Comment s'appelle M. 16 ?</QuestionText>
+    <Answers>
+      <A>Michel</A>
+      <B>Jean-Marc</B>
+      <C>Denis</C>
+      <D>Jacques</D>
+    </Answers>
+    <GoodAnswer>B</GoodAnswer>
+	</Question>
+	  
+    <Question Id="17">
+    <QuestionText>Comment s'appelle M. 17 ?</QuestionText>
+    <Answers>
+      <A>Michel</A>
+      <B>Jean-Marc</B>
+      <C>Denis</C>
+      <D>Jacques</D>
+    </Answers>
+    <GoodAnswer>B</GoodAnswer>
+	</Question>
+	  
+    <Question Id="18">
+    <QuestionText>Comment s'appelle M. 18 ?</QuestionText>
+    <Answers>
+      <A>Michel</A>
+      <B>Jean-Marc</B>
+      <C>Denis</C>
+      <D>Jacques</D>
+    </Answers>
+    <GoodAnswer>B</GoodAnswer>
+	</Question>
+	  
+    <Question Id="19">
+    <QuestionText>Comment s'appelle M. 19 ?</QuestionText>
+    <Answers>
+      <A>Michel</A>
+      <B>Jean-Marc</B>
+      <C>Denis</C>
+      <D>Jacques</D>
+    </Answers>
+    <GoodAnswer>B</GoodAnswer>
+	</Question>
+		
+    <Question Id="20">
+    <QuestionText>Comment s'appelle M. 20 ?</QuestionText>
+    <Answers>
+      <A>Michel</A>
+      <B>Jean-Marc</B>
+      <C>Denis</C>
+      <D>Jacques</D>
+    </Answers>
+    <GoodAnswer>B</GoodAnswer>
+	</Question>
+
 </Questions>
