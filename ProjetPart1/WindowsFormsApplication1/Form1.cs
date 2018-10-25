@@ -16,5 +16,18 @@ namespace WindowsFormsApplication1
         {
             InitializeComponent();
         }
+
+        private void btStart_Click(object sender, EventArgs e)
+        {
+            System.Threading.Thread monthread = new System.Threading.Thread(new System.Threading.ThreadStart(ouvrirnouveauform));
+            monthread.Start();
+            this.Close();
+        }
+
+        public static void ouvrirnouveauform()
+        {
+            Application.Run(new FormQuestions());
+        }
+
     }
 }
