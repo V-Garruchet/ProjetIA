@@ -32,10 +32,10 @@
             this.btVerif = new System.Windows.Forms.Button();
             this.btSuivant = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.cbRep1 = new System.Windows.Forms.CheckBox();
-            this.cbRep2 = new System.Windows.Forms.CheckBox();
-            this.cbRep3 = new System.Windows.Forms.CheckBox();
             this.cbRep4 = new System.Windows.Forms.CheckBox();
+            this.cbRep3 = new System.Windows.Forms.CheckBox();
+            this.cbRep2 = new System.Windows.Forms.CheckBox();
+            this.cbRep1 = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,6 +68,7 @@
             this.btSuivant.TabIndex = 6;
             this.btSuivant.Text = "Suivant";
             this.btSuivant.UseVisualStyleBackColor = true;
+            this.btSuivant.Click += new System.EventHandler(this.btSuivant_Click);
             // 
             // groupBox1
             // 
@@ -81,27 +82,16 @@
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             // 
-            // cbRep1
+            // cbRep4
             // 
-            this.cbRep1.AutoSize = true;
-            this.cbRep1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbRep1.Location = new System.Drawing.Point(32, 37);
-            this.cbRep1.Name = "cbRep1";
-            this.cbRep1.Size = new System.Drawing.Size(102, 24);
-            this.cbRep1.TabIndex = 5;
-            this.cbRep1.Text = "Réponse1";
-            this.cbRep1.UseVisualStyleBackColor = true;
-            // 
-            // cbRep2
-            // 
-            this.cbRep2.AutoSize = true;
-            this.cbRep2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbRep2.Location = new System.Drawing.Point(32, 96);
-            this.cbRep2.Name = "cbRep2";
-            this.cbRep2.Size = new System.Drawing.Size(102, 24);
-            this.cbRep2.TabIndex = 6;
-            this.cbRep2.Text = "Réponse2";
-            this.cbRep2.UseVisualStyleBackColor = true;
+            this.cbRep4.AutoSize = true;
+            this.cbRep4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbRep4.Location = new System.Drawing.Point(32, 224);
+            this.cbRep4.Name = "cbRep4";
+            this.cbRep4.Size = new System.Drawing.Size(102, 24);
+            this.cbRep4.TabIndex = 8;
+            this.cbRep4.Text = "Réponse4";
+            this.cbRep4.UseVisualStyleBackColor = true;
             // 
             // cbRep3
             // 
@@ -114,16 +104,27 @@
             this.cbRep3.Text = "Réponse3";
             this.cbRep3.UseVisualStyleBackColor = true;
             // 
-            // cbRep4
+            // cbRep2
             // 
-            this.cbRep4.AutoSize = true;
-            this.cbRep4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbRep4.Location = new System.Drawing.Point(32, 224);
-            this.cbRep4.Name = "cbRep4";
-            this.cbRep4.Size = new System.Drawing.Size(102, 24);
-            this.cbRep4.TabIndex = 8;
-            this.cbRep4.Text = "Réponse4";
-            this.cbRep4.UseVisualStyleBackColor = true;
+            this.cbRep2.AutoSize = true;
+            this.cbRep2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbRep2.Location = new System.Drawing.Point(32, 96);
+            this.cbRep2.Name = "cbRep2";
+            this.cbRep2.Size = new System.Drawing.Size(102, 24);
+            this.cbRep2.TabIndex = 6;
+            this.cbRep2.Text = "Réponse2";
+            this.cbRep2.UseVisualStyleBackColor = true;
+            // 
+            // cbRep1
+            // 
+            this.cbRep1.AutoSize = true;
+            this.cbRep1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbRep1.Location = new System.Drawing.Point(32, 37);
+            this.cbRep1.Name = "cbRep1";
+            this.cbRep1.Size = new System.Drawing.Size(102, 24);
+            this.cbRep1.TabIndex = 5;
+            this.cbRep1.Text = "Réponse1";
+            this.cbRep1.UseVisualStyleBackColor = true;
             // 
             // FormQuestions
             // 

@@ -12,9 +12,25 @@ namespace WindowsFormsApplication1
 {
     public partial class FormQuestions : Form
     {
+
+        int compteurQ = 1;
+
+
         public FormQuestions()
         {
             InitializeComponent();
+        }
+
+        private void btSuivant_Click(object sender, EventArgs e)
+        {
+            System.Threading.Thread monthread = new System.Threading.Thread(new System.Threading.ThreadStart(ouvrirnouveauform));
+            monthread.Start();
+            this.Close();
+        }
+
+        public static void ouvrirnouveauform()
+        {
+            Application.Run(new FormQuestions());
         }
     }
 }
