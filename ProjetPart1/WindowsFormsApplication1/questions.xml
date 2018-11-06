@@ -13,225 +13,229 @@
     </Question>
 	  
     <Question Id="1">
-    <QuestionText>Comment s'appelle M. 1 ?</QuestionText>
+    <QuestionText>Quelle notion n'est pas liée aux algorithmes génétiques ?</QuestionText>
     <Answers>
-      <A>Michel</A>
-      <B>Jean-Marc</B>
-      <C>Denis</C>
-      <D>Jacques</D>
+      <A>Les permutations</A>
+      <B>La fonction de coût</B>
+      <C>Les croisements de vecteurs</C>
+      <D>Les mutations de vecteurs</D>
     </Answers>
-    <GoodAnswer>B</GoodAnswer>
+    <GoodAnswer>A</GoodAnswer>
 	</Question>
 	  
 		
 	<Question Id="2">
-    <QuestionText>Comment s'appelle M. 2 ?</QuestionText>
+    <QuestionText>L'algorithme MinMax est :</QuestionText>
     <Answers>
-      <A>Michel</A>
-      <B>Jean-Marc</B>
-      <C>Denis</C>
-      <D>Jacques</D>
+      <A>utilisé en IA pour les jeux à deux, l'un contre l'autre</A>
+      <B>utilisé en IA pour trouver le plus court chemin dans un graphe</B>
+      <C>utilisé en IA pour déduire le nombre de coup restant en supposant qu'un adversaire joue d'une manière optimale</C>
+      <D>utilisé en IA pour calculer le nombre de solutions prossibles</D>
     </Answers>
-    <GoodAnswer>B</GoodAnswer>
+    <GoodAnswer>AC</GoodAnswer>
 	</Question>
 		
     <Question Id="3">
-    <QuestionText>Comment s'appelle M. 3 ?</QuestionText>
+    <QuestionText>Un graphe est dit "connexe" si :</QuestionText>
     <Answers>
-      <A>Michel</A>
-      <B>Jean-Marc</B>
-      <C>Denis</C>
-      <D>Jacques</D>
+      <A>il est possible de trouver un chemin permettant de relier n'importe quel couple de sommets</A>
+      <B>il existe une suite d'arcs différents permettant de partir d'un sommet et de revenir sur ce même sommet</B>
+      <C>si il est possible de mettre en correspondance bijective ses sommets avec ceux d’un deuxième graphe, et qu’il y a les mêmes relations entre les sommets des deux graphes</C>
+      <D>un graphe ne peut pas être connexe, par définition</D>
     </Answers>
-    <GoodAnswer>B</GoodAnswer>
+    <GoodAnswer>A</GoodAnswer>
 	</Question>
 		
     <Question Id="4">
-    <QuestionText>Comment s'appelle M. 4 ?</QuestionText>
+    <QuestionText>
+      Quels paramètres permettent d’évaluer les performances d’un algorithme ?</QuestionText>
     <Answers>
-      <A>Michel</A>
-      <B>Jean-Marc</B>
-      <C>Denis</C>
-      <D>Jacques</D>
+      <A>La complexité en espace</A>
+      <B>La complexité en temps</B>
+      <C>Le rendement</C>
+      <D>La complétude</D>
     </Answers>
-    <GoodAnswer>B</GoodAnswer>
+    <GoodAnswer>ABD</GoodAnswer>
 	</Question>
 		
     <Question Id="5">
-    <QuestionText>Comment s'appelle M. 5 ?</QuestionText>
+    <QuestionText>Comment est gérée la liste de noeuds dans une stratégie de recherche en largeur d’abord ? </QuestionText>
     <Answers>
-      <A>Michel</A>
-      <B>Jean-Marc</B>
-      <C>Denis</C>
-      <D>Jacques</D>
+      <A>First In Last Out</A>
+      <B>Last In Last Out</B>
+      <C>First In First Out</C>
+      <D>Last In First Out</D>
     </Answers>
-    <GoodAnswer>B</GoodAnswer>
+    <GoodAnswer>C</GoodAnswer>
 	</Question>
 		
     <Question Id="6">
-    <QuestionText>Comment s'appelle M. 6 ?</QuestionText>
+    <QuestionText>Quelle stratégie de recherche est utilisée dans l’algorithme de Dijkstra ?</QuestionText>
     <Answers>
-      <A>Michel</A>
-      <B>Jean-Marc</B>
-      <C>Denis</C>
-      <D>Jacques</D>
+      <A>En largeur d'abord</A>
+      <B>Bidirectionnelle</B>
+      <C>En profondeur d'abord</C>
+      <D>Le meilleur d'abord</D>
     </Answers>
-    <GoodAnswer>B</GoodAnswer>
+    <GoodAnswer>D</GoodAnswer>
 	</Question>
 	  
     <Question Id="7">
-    <QuestionText>Comment s'appelle M. 7 ?</QuestionText>
+    <QuestionText>Lesquelles de ces propriétés ne sont pas propres à l’algorithme A* ?</QuestionText>
     <Answers>
-      <A>Michel</A>
-      <B>Jean-Marc</B>
-      <C>Denis</C>
-      <D>Jacques</D>
+      <A>Si h(N) est un minorant du coût du chemin restant réel, alors A* garantit que le chemin trouvé est le plus court</A>
+      <B>Si h(N) est un majorant du coût du chemin restant réel, alors A* garantit que le chemin trouvé est le plus court</B>
+      <C>Si on pose h(N)=0 pour tout N, A* équivalent à Dijkstra</C>
+      <D>Si on pose h(N)=1 pour tout N, A* équivalent à Dijkstra</D>
     </Answers>
-    <GoodAnswer>B</GoodAnswer>
+    <GoodAnswer>AC</GoodAnswer>
 	</Question>
 	  
     <Question Id="8">
-    <QuestionText>Comment s'appelle M. 8 ?</QuestionText>
+    <QuestionText>Qu’est ce qu’une matrice d’adjacence ?</QuestionText>
     <Answers>
-      <A>Michel</A>
-      <B>Jean-Marc</B>
-      <C>Denis</C>
-      <D>Jacques</D>
+      <A>Une matrice qui mémorise la présence ou l'absence d'une relation entre des noeuds</A>
+      <B>Une matrice qui mémorise la présence ou l'absence d'une relation entre des arcs</B>
+      <C>Une matrice inversible</C>
+      <D>Une matrice de trace et de déterminants égaux</D>
     </Answers>
-    <GoodAnswer>B</GoodAnswer>
+    <GoodAnswer>A</GoodAnswer>
 	</Question>
 	  
     <Question Id="9">
-    <QuestionText>Comment s'appelle M. 9 ?</QuestionText>
+    <QuestionText>
+      Quelles notions définissent l’espace d’état d’un problème ?</QuestionText>
     <Answers>
-      <A>Michel</A>
-      <B>Jean-Marc</B>
-      <C>Denis</C>
-      <D>Jacques</D>
+      <A>Un nombre de solutions</A>
+      <B>Un état initial</B>
+      <C>Un chemin</C>
+      <D>Une fonction successeur</D>
     </Answers>
-    <GoodAnswer>B</GoodAnswer>
+    <GoodAnswer>BD</GoodAnswer>
 	</Question>
 		
     <Question Id="10">
-    <QuestionText>Comment s'appelle M. 10 ?</QuestionText>
+    <QuestionText>
+      L’algorithme alpha-beta permet de :</QuestionText>
     <Answers>
-      <A>Michel</A>
-      <B>Jean-Marc</B>
-      <C>Denis</C>
-      <D>Jacques</D>
+      <A>optimiser l'algorithme MinMax</A>
+      <B>optimiser l’algorithme de Dijkstra</B>
+      <C>optimiser l’algorithme A*</C>
+      <D>trouver le chemin le plus court alpha et le chemin le plus long beta</D>
     </Answers>
-    <GoodAnswer>B</GoodAnswer>
+    <GoodAnswer>A</GoodAnswer>
 	</Question>
 	  
     <Question Id="11">
-    <QuestionText>Comment s'appelle M. 11 ?</QuestionText>
+    <QuestionText>
+      En robotique, combien de degrés de liberté une liaison peut-elle avoir au maximum ?</QuestionText>
     <Answers>
-      <A>Michel</A>
-      <B>Jean-Marc</B>
-      <C>Denis</C>
-      <D>Jacques</D>
+      <A>3</A>
+      <B>6</B>
+      <C>9</C>
+      <D>Il n'y a pas de limite</D>
     </Answers>
     <GoodAnswer>B</GoodAnswer>
 	</Question>
 	  
 		
 	<Question Id="12">
-    <QuestionText>Comment s'appelle M. 12 ?</QuestionText>
+    <QuestionText>Quelle entreprise est spécialisée dans le développement de robots humanoïdes ou reproduisant le monde animal (Anibot) ?</QuestionText>
     <Answers>
-      <A>Michel</A>
-      <B>Jean-Marc</B>
-      <C>Denis</C>
-      <D>Jacques</D>
+      <A>Aldebaran Robotics</A>
+      <B>Shaft</B>
+      <C>Google</C>
+      <D>Boston Dynamic</D>
     </Answers>
-    <GoodAnswer>B</GoodAnswer>
+    <GoodAnswer>D</GoodAnswer>
 	</Question>
 		
     <Question Id="13">
-    <QuestionText>Comment s'appelle M. 13 ?</QuestionText>
+    <QuestionText>En robotique, que différencie un capteur passif d'un capteur actif ?</QuestionText>
     <Answers>
-      <A>Michel</A>
-      <B>Jean-Marc</B>
-      <C>Denis</C>
-      <D>Jacques</D>
+      <A>L'un se met en veille lorsqu'une zone sans ostacle est détectée, l'autre non</A>
+      <B>L'un sur situe sur le robot, l'autre à distance</B>
+      <C>L'un alerte de la présence d'un obstacle, l'autre non</C>
+      <D>L'un détecte l'obstacle à son contact, l'autre par système de détection infrarouge</D>
     </Answers>
-    <GoodAnswer>B</GoodAnswer>
+    <GoodAnswer>D</GoodAnswer>
 	</Question>
 		
     <Question Id="14">
-    <QuestionText>Comment s'appelle M. 14 ?</QuestionText>
+    <QuestionText>Quelle information n’est pas proprioceptive ?</QuestionText>
     <Answers>
-      <A>Michel</A>
-      <B>Jean-Marc</B>
-      <C>Denis</C>
-      <D>Jacques</D>
+      <A>L'odométrie</A>
+      <B>L'accélération</B>
+      <C>La détection d'obstacles</C>
+      <D>Le niveau d'énergie</D>
     </Answers>
-    <GoodAnswer>B</GoodAnswer>
+    <GoodAnswer>C</GoodAnswer>
 	</Question>
 		
     <Question Id="15">
-    <QuestionText>Comment s'appelle M. 15 ?</QuestionText>
+    <QuestionText>Quelles propriétés différencient une IA forte d’une IA faible ?</QuestionText>
     <Answers>
-      <A>Michel</A>
-      <B>Jean-Marc</B>
-      <C>Denis</C>
-      <D>Jacques</D>
+      <A>La conscience et la personnalité</A>
+      <B>Une complexité minimale</B>
+      <C>La compréhension du langage</C>
+      <D>Leur force en résolution de problèmes</D>
     </Answers>
-    <GoodAnswer>B</GoodAnswer>
+    <GoodAnswer>A</GoodAnswer>
 	</Question>
 		
     <Question Id="16">
-    <QuestionText>Comment s'appelle M. 16 ?</QuestionText>
+    <QuestionText>Une heuristique :</QuestionText>
     <Answers>
-      <A>Michel</A>
-      <B>Jean-Marc</B>
-      <C>Denis</C>
-      <D>Jacques</D>
+      <A>Permet de résoudre le jeu d'Ehrenfeucht-Fraïssé</A>
+      <B>Est une proposition de chemin possible à suivre pour atteindre le sommet terminal</B>
+      <C>Est une estimation du coût restant pour atteindre le sommet terminal</C>
+      <D>Est le nombre de chemins possibles pour atteindre le sommet terminal</D>
     </Answers>
-    <GoodAnswer>B</GoodAnswer>
+    <GoodAnswer>C</GoodAnswer>
 	</Question>
 	  
     <Question Id="17">
-    <QuestionText>Comment s'appelle M. 17 ?</QuestionText>
+    <QuestionText>Pour quels problèmes l'algorithme alpha beta est-il efficace ?</QuestionText>
     <Answers>
-      <A>Michel</A>
-      <B>Jean-Marc</B>
-      <C>Denis</C>
-      <D>Jacques</D>
+      <A>Le puissance 4</A>
+      <B>Les dames</B>
+      <C>Le solitaire</C>
+      <D>Les échecs</D>
     </Answers>
     <GoodAnswer>B</GoodAnswer>
 	</Question>
 	  
     <Question Id="18">
-    <QuestionText>Comment s'appelle M. 18 ?</QuestionText>
+    <QuestionText>Quelle est la différence entre l'arrête et l'arc d'un graphe ?</QuestionText>
     <Answers>
-      <A>Michel</A>
-      <B>Jean-Marc</B>
-      <C>Denis</C>
-      <D>Jacques</D>
+      <A>Aucune. C'est la même chose.</A>
+      <B>L'arc est une relation symétrique entre deux noeuds, contrairement à l'arrête</B>
+      <C>L'arc est une relation asymétrique entre deux noeuds, contrairement à l'arrête</C>
+      <D>L'arrête est une relation entre deux noeuds et l'arc une relation reliant un noeud à lui-même</D>
     </Answers>
-    <GoodAnswer>B</GoodAnswer>
+    <GoodAnswer>C</GoodAnswer>
 	</Question>
 	  
     <Question Id="19">
-    <QuestionText>Comment s'appelle M. 19 ?</QuestionText>
+    <QuestionText>La matrice d'adjacence est symétrique si : </QuestionText>
     <Answers>
-      <A>Michel</A>
-      <B>Jean-Marc</B>
-      <C>Denis</C>
-      <D>Jacques</D>
+      <A>Le graphe est orienté</A>
+      <B>Le graphe est non orienté</B>
+      <C>Toutes les relations du graphe sont des arcs</C>
+      <D>Aucune relation du graphe n'est un arc</D>
     </Answers>
-    <GoodAnswer>B</GoodAnswer>
+    <GoodAnswer>BD</GoodAnswer>
 	</Question>
 		
     <Question Id="20">
-    <QuestionText>Comment s'appelle M. 20 ?</QuestionText>
+    <QuestionText>Que différencie l'espace des ouverts de l'espace des fermés ?</QuestionText>
     <Answers>
-      <A>Michel</A>
-      <B>Jean-Marc</B>
-      <C>Denis</C>
-      <D>Jacques</D>
+      <A>L'un contient des solutions testées et efficaces, l'autre des solutions testées et inefficaces </A>
+      <B>L'un contient des arêtes par lesquelles on est déjà passé, l'autre des arêtes encore inexplorées</B>
+      <C>L'un contient des graphes cycliques, l'autre des graphes linéaires</C>
+      <D>L'un contient des noeuds traités,l'autre des noeuds encore inexplorés</D>
     </Answers>
-    <GoodAnswer>B</GoodAnswer>
+    <GoodAnswer>D</GoodAnswer>
 	</Question>
 
 </Questions>
