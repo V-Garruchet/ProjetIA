@@ -25,6 +25,7 @@ namespace WindowsFormsApplication1
 
             if (urlImage!=null && urlImage!="")
                 pictureBoxQuestion.Image = Image.FromFile("..\\..\\Images\\" + urlImage);
+                //pictureBoxQuestion.Image = Image.FromFile("..\\..\\Images\\robotarm.jpg");
         }
 
 

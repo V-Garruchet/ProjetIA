@@ -32,11 +32,11 @@
             this.btVerif = new System.Windows.Forms.Button();
             this.btSuivant = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureBoxQuestion = new System.Windows.Forms.PictureBox();
             this.cbRep4 = new System.Windows.Forms.CheckBox();
             this.cbRep3 = new System.Windows.Forms.CheckBox();
             this.cbRep2 = new System.Windows.Forms.CheckBox();
             this.cbRep1 = new System.Windows.Forms.CheckBox();
-            this.pictureBoxQuestion = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxQuestion)).BeginInit();
             this.SuspendLayout();
@@ -81,18 +81,28 @@
             this.groupBox1.Controls.Add(this.cbRep3);
             this.groupBox1.Controls.Add(this.cbRep2);
             this.groupBox1.Controls.Add(this.cbRep1);
-            this.groupBox1.Location = new System.Drawing.Point(43, 97);
+            this.groupBox1.Location = new System.Drawing.Point(26, 87);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(698, 278);
+            this.groupBox1.Size = new System.Drawing.Size(715, 303);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
+            // 
+            // pictureBoxQuestion
+            // 
+            this.pictureBoxQuestion.Location = new System.Drawing.Point(-12, 21);
+            this.pictureBoxQuestion.Name = "pictureBoxQuestion";
+            this.pictureBoxQuestion.Size = new System.Drawing.Size(223, 263);
+            this.pictureBoxQuestion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxQuestion.TabIndex = 9;
+            this.pictureBoxQuestion.TabStop = false;
+            this.pictureBoxQuestion.Click += new System.EventHandler(this.pictureBoxQuestion_Click);
             // 
             // cbRep4
             // 
             this.cbRep4.AutoSize = true;
             this.cbRep4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbRep4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.cbRep4.Location = new System.Drawing.Point(219, 219);
+            this.cbRep4.Location = new System.Drawing.Point(231, 233);
             this.cbRep4.Name = "cbRep4";
             this.cbRep4.Size = new System.Drawing.Size(102, 24);
             this.cbRep4.TabIndex = 8;
@@ -103,7 +113,7 @@
             // 
             this.cbRep3.AutoSize = true;
             this.cbRep3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbRep3.Location = new System.Drawing.Point(219, 156);
+            this.cbRep3.Location = new System.Drawing.Point(231, 170);
             this.cbRep3.Name = "cbRep3";
             this.cbRep3.Size = new System.Drawing.Size(102, 24);
             this.cbRep3.TabIndex = 7;
@@ -114,7 +124,7 @@
             // 
             this.cbRep2.AutoSize = true;
             this.cbRep2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbRep2.Location = new System.Drawing.Point(219, 91);
+            this.cbRep2.Location = new System.Drawing.Point(231, 105);
             this.cbRep2.Name = "cbRep2";
             this.cbRep2.Size = new System.Drawing.Size(102, 24);
             this.cbRep2.TabIndex = 6;
@@ -125,22 +135,12 @@
             // 
             this.cbRep1.AutoSize = true;
             this.cbRep1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbRep1.Location = new System.Drawing.Point(219, 32);
+            this.cbRep1.Location = new System.Drawing.Point(231, 46);
             this.cbRep1.Name = "cbRep1";
             this.cbRep1.Size = new System.Drawing.Size(102, 24);
             this.cbRep1.TabIndex = 5;
             this.cbRep1.Text = "Réponse1";
             this.cbRep1.UseVisualStyleBackColor = true;
-            // 
-            // pictureBoxQuestion
-            // 
-            this.pictureBoxQuestion.Location = new System.Drawing.Point(23, 52);
-            this.pictureBoxQuestion.Name = "pictureBoxQuestion";
-            this.pictureBoxQuestion.Size = new System.Drawing.Size(144, 180);
-            this.pictureBoxQuestion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxQuestion.TabIndex = 9;
-            this.pictureBoxQuestion.TabStop = false;
-            this.pictureBoxQuestion.Click += new System.EventHandler(this.pictureBoxQuestion_Click);
             // 
             // FormQuestions
             // 
