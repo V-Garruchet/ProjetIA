@@ -30,6 +30,7 @@
         {
             this.lbScore = new System.Windows.Forms.Label();
             this.lbRes = new System.Windows.Forms.Label();
+            this.labelCommentaire = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbScore
@@ -55,11 +56,13 @@
             this.lbRes.TabIndex = 1;
             this.lbRes.Text = "NOTE";
             // 
+            
             // Resultats
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(655, 441);
+            this.Controls.Add(this.labelCommentaire);
             this.Controls.Add(this.lbRes);
             this.Controls.Add(this.lbScore);
             this.Name = "Resultats";
@@ -73,5 +76,6 @@
 
         private System.Windows.Forms.Label lbScore;
         public System.Windows.Forms.Label lbRes;
+        private System.Windows.Forms.Label labelCommentaire;
     }
 }

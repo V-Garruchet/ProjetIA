@@ -14,13 +14,15 @@ namespace Ex1_Questionnaire
         public string QuestionText { get; set; }
         public List<string> Answers { get; set; }
         public string GoodAnswer { get; set; }
+        public string Image { get; set; }
 
-        public Question(int id, string questionText, List<string> answers, string goodAnswer)
+        public Question(int id, string questionText, List<string> answers, string goodAnswer, string image)
         {
             Id = id;
             QuestionText = questionText;
             Answers = answers;
             GoodAnswer = goodAnswer;
+            Image = image;
 
         }
         public Question(int id)
@@ -38,7 +40,8 @@ namespace Ex1_Questionnaire
                         {
                             QuestionText = item.Element("QuestionText").Value,
                             Answers = item.Descendants("Answers").Descendants().Select(x => x.Value).ToList(),
-                            GoodAnswer = item.Element("GoodAnswer").Value
+                            GoodAnswer = item.Element("GoodAnswer").Value,
+                            Image = item.Element("Image").Value,
                         };
 
             //On entre les valeurs dans la question
@@ -47,6 +50,7 @@ namespace Ex1_Questionnaire
                 this.QuestionText = item.QuestionText;
                 this.Answers = item.Answers;
                 this.GoodAnswer = item.GoodAnswer;
+                this.Image = item.Image;
             }
 
             return;

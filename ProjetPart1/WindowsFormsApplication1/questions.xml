@@ -10,6 +10,7 @@
       <D>Jacques</D>
     </Answers>
     <GoodAnswer>B</GoodAnswer>
+      <Image></Image>
     </Question>
 	  
     <Question Id="1">
@@ -21,6 +22,7 @@
       <D>Les mutations de vecteurs</D>
     </Answers>
     <GoodAnswer>A</GoodAnswer>
+      <Image></Image>
 	</Question>
 	  
 		
@@ -33,6 +35,8 @@
       <D>utilisé en IA pour calculer le nombre de solutions prossibles</D>
     </Answers>
     <GoodAnswer>AC</GoodAnswer>
+    <Image></Image>
+    
 	</Question>
 		
     <Question Id="3">
@@ -44,6 +48,7 @@
       <D>un graphe ne peut pas être connexe, par définition</D>
     </Answers>
     <GoodAnswer>A</GoodAnswer>
+      <Image></Image>
 	</Question>
 		
     <Question Id="4">
@@ -56,6 +61,7 @@
       <D>La complétude</D>
     </Answers>
     <GoodAnswer>ABD</GoodAnswer>
+      <Image></Image>
 	</Question>
 		
     <Question Id="5">
@@ -67,6 +73,7 @@
       <D>Last In First Out</D>
     </Answers>
     <GoodAnswer>C</GoodAnswer>
+      <Image></Image>
 	</Question>
 		
     <Question Id="6">
@@ -78,6 +85,7 @@
       <D>Le meilleur d'abord</D>
     </Answers>
     <GoodAnswer>D</GoodAnswer>
+      <Image></Image>
 	</Question>
 	  
     <Question Id="7">
@@ -89,6 +97,7 @@
       <D>Si on pose h(N)=1 pour tout N, A* équivalent à Dijkstra</D>
     </Answers>
     <GoodAnswer>AC</GoodAnswer>
+      <Image></Image>
 	</Question>
 	  
     <Question Id="8">
@@ -100,6 +109,7 @@
       <D>Une matrice de trace et de déterminants égaux</D>
     </Answers>
     <GoodAnswer>A</GoodAnswer>
+      <Image></Image>
 	</Question>
 	  
     <Question Id="9">
@@ -112,6 +122,7 @@
       <D>Une fonction successeur</D>
     </Answers>
     <GoodAnswer>BD</GoodAnswer>
+      <Image></Image>
 	</Question>
 		
     <Question Id="10">
@@ -124,6 +135,7 @@
       <D>trouver le chemin le plus court alpha et le chemin le plus long beta</D>
     </Answers>
     <GoodAnswer>A</GoodAnswer>
+      <Image></Image>
 	</Question>
 	  
     <Question Id="11">
@@ -136,6 +148,7 @@
       <D>Il n'y a pas de limite</D>
     </Answers>
     <GoodAnswer>B</GoodAnswer>
+      <Image></Image>
 	</Question>
 	  
 		
@@ -148,6 +161,7 @@
       <D>Boston Dynamic</D>
     </Answers>
     <GoodAnswer>D</GoodAnswer>
+    <Image></Image>
 	</Question>
 		
     <Question Id="13">
@@ -159,6 +173,7 @@
       <D>L'un détecte l'obstacle à son contact, l'autre par système de détection infrarouge</D>
     </Answers>
     <GoodAnswer>D</GoodAnswer>
+      <Image></Image>
 	</Question>
 		
     <Question Id="14">
@@ -170,6 +185,7 @@
       <D>Le niveau d'énergie</D>
     </Answers>
     <GoodAnswer>C</GoodAnswer>
+      <Image></Image>
 	</Question>
 		
     <Question Id="15">
@@ -181,6 +197,7 @@
       <D>Leur force en résolution de problèmes</D>
     </Answers>
     <GoodAnswer>A</GoodAnswer>
+      <Image></Image>
 	</Question>
 		
     <Question Id="16">
@@ -192,6 +209,7 @@
       <D>Est le nombre de chemins possibles pour atteindre le sommet terminal</D>
     </Answers>
     <GoodAnswer>C</GoodAnswer>
+      <Image></Image>
 	</Question>
 	  
     <Question Id="17">
@@ -203,6 +221,7 @@
       <D>Les échecs</D>
     </Answers>
     <GoodAnswer>B</GoodAnswer>
+      <Image></Image>
 	</Question>
 	  
     <Question Id="18">
@@ -214,6 +233,7 @@
       <D>L'arrête est une relation entre deux noeuds et l'arc une relation reliant un noeud à lui-même</D>
     </Answers>
     <GoodAnswer>C</GoodAnswer>
+      <Image></Image>
 	</Question>
 	  
     <Question Id="19">
@@ -225,6 +245,7 @@
       <D>Aucune relation du graphe n'est un arc</D>
     </Answers>
     <GoodAnswer>BD</GoodAnswer>
+      <Image></Image>
 	</Question>
 		
     <Question Id="20">
@@ -236,6 +257,7 @@
       <D>L'un contient des noeuds traités,l'autre des noeuds encore inexplorés</D>
     </Answers>
     <GoodAnswer>D</GoodAnswer>
+      <Image></Image>
 	</Question>
 
 </Questions>

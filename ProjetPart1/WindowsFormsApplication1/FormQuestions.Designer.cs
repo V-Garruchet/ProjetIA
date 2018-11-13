@@ -36,7 +36,9 @@
             this.cbRep3 = new System.Windows.Forms.CheckBox();
             this.cbRep2 = new System.Windows.Forms.CheckBox();
             this.cbRep1 = new System.Windows.Forms.CheckBox();
+            this.pictureBoxQuestion = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxQuestion)).BeginInit();
             this.SuspendLayout();
             // 
             // lbQ
@@ -52,7 +54,7 @@
             // btVerif
             // 
             this.btVerif.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btVerif.Location = new System.Drawing.Point(137, 366);
+            this.btVerif.Location = new System.Drawing.Point(133, 400);
             this.btVerif.Name = "btVerif";
             this.btVerif.Size = new System.Drawing.Size(131, 38);
             this.btVerif.TabIndex = 5;
@@ -63,7 +65,7 @@
             // btSuivant
             // 
             this.btSuivant.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btSuivant.Location = new System.Drawing.Point(381, 366);
+            this.btSuivant.Location = new System.Drawing.Point(504, 400);
             this.btSuivant.Name = "btSuivant";
             this.btSuivant.Size = new System.Drawing.Size(131, 38);
             this.btSuivant.TabIndex = 6;
@@ -73,13 +75,15 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.AutoSize = true;
+            this.groupBox1.Controls.Add(this.pictureBoxQuestion);
             this.groupBox1.Controls.Add(this.cbRep4);
             this.groupBox1.Controls.Add(this.cbRep3);
             this.groupBox1.Controls.Add(this.cbRep2);
             this.groupBox1.Controls.Add(this.cbRep1);
-            this.groupBox1.Location = new System.Drawing.Point(47, 63);
+            this.groupBox1.Location = new System.Drawing.Point(43, 97);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(575, 278);
+            this.groupBox1.Size = new System.Drawing.Size(698, 278);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             // 
@@ -88,7 +92,7 @@
             this.cbRep4.AutoSize = true;
             this.cbRep4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbRep4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.cbRep4.Location = new System.Drawing.Point(32, 224);
+            this.cbRep4.Location = new System.Drawing.Point(219, 219);
             this.cbRep4.Name = "cbRep4";
             this.cbRep4.Size = new System.Drawing.Size(102, 24);
             this.cbRep4.TabIndex = 8;
@@ -99,7 +103,7 @@
             // 
             this.cbRep3.AutoSize = true;
             this.cbRep3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbRep3.Location = new System.Drawing.Point(32, 161);
+            this.cbRep3.Location = new System.Drawing.Point(219, 156);
             this.cbRep3.Name = "cbRep3";
             this.cbRep3.Size = new System.Drawing.Size(102, 24);
             this.cbRep3.TabIndex = 7;
@@ -110,7 +114,7 @@
             // 
             this.cbRep2.AutoSize = true;
             this.cbRep2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbRep2.Location = new System.Drawing.Point(32, 96);
+            this.cbRep2.Location = new System.Drawing.Point(219, 91);
             this.cbRep2.Name = "cbRep2";
             this.cbRep2.Size = new System.Drawing.Size(102, 24);
             this.cbRep2.TabIndex = 6;
@@ -121,18 +125,29 @@
             // 
             this.cbRep1.AutoSize = true;
             this.cbRep1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbRep1.Location = new System.Drawing.Point(32, 37);
+            this.cbRep1.Location = new System.Drawing.Point(219, 32);
             this.cbRep1.Name = "cbRep1";
             this.cbRep1.Size = new System.Drawing.Size(102, 24);
             this.cbRep1.TabIndex = 5;
             this.cbRep1.Text = "Réponse1";
             this.cbRep1.UseVisualStyleBackColor = true;
             // 
+            // pictureBoxQuestion
+            // 
+            this.pictureBoxQuestion.Location = new System.Drawing.Point(23, 52);
+            this.pictureBoxQuestion.Name = "pictureBoxQuestion";
+            this.pictureBoxQuestion.Size = new System.Drawing.Size(144, 180);
+            this.pictureBoxQuestion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxQuestion.TabIndex = 9;
+            this.pictureBoxQuestion.TabStop = false;
+            this.pictureBoxQuestion.Click += new System.EventHandler(this.pictureBoxQuestion_Click);
+            // 
             // FormQuestions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(655, 441);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(763, 480);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btSuivant);
             this.Controls.Add(this.btVerif);
@@ -141,6 +156,7 @@
             this.Text = "FormQuestions";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxQuestion)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -156,5 +172,6 @@
         public System.Windows.Forms.CheckBox cbRep3;
         public System.Windows.Forms.CheckBox cbRep2;
         public System.Windows.Forms.CheckBox cbRep1;
+        private System.Windows.Forms.PictureBox pictureBoxQuestion;
     }
 }
