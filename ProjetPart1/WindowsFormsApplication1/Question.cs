@@ -16,21 +16,15 @@ namespace Ex1_Questionnaire
         public string GoodAnswer { get; set; }
         public string Image { get; set; }
 
-        public Question(int id, string questionText, List<string> answers, string goodAnswer, string image)
-        {
-            Id = id;
-            QuestionText = questionText;
-            Answers = answers;
-            GoodAnswer = goodAnswer;
-            Image = image;
 
-        }
         public Question(int id)
         {
             Id = id;
             CreateQuestion(id);
         }
 
+
+        // Cette fonction permet de créer une question à partir du fichier XML et de l'id de la question
         private void CreateQuestion(int id)
         {
             //Lecture du xml
