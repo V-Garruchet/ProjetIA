@@ -20,6 +20,8 @@ namespace WindowsFormsApplication1
 
         public FormQuestions()
         {
+            this.StartPosition = FormStartPosition.Manual;
+            this.Location = new Point(100, 100);
             InitializeComponent();
         }
 

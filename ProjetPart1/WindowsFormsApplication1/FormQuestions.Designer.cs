@@ -89,9 +89,9 @@
             // 
             // pictureBoxQuestion
             // 
-            this.pictureBoxQuestion.Location = new System.Drawing.Point(-12, 21);
+            this.pictureBoxQuestion.Location = new System.Drawing.Point(15, 19);
             this.pictureBoxQuestion.Name = "pictureBoxQuestion";
-            this.pictureBoxQuestion.Size = new System.Drawing.Size(223, 263);
+            this.pictureBoxQuestion.Size = new System.Drawing.Size(280, 263);
             this.pictureBoxQuestion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxQuestion.TabIndex = 9;
             this.pictureBoxQuestion.TabStop = false;
@@ -102,7 +102,7 @@
             this.cbRep4.AutoSize = true;
             this.cbRep4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbRep4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.cbRep4.Location = new System.Drawing.Point(231, 233);
+            this.cbRep4.Location = new System.Drawing.Point(318, 215);
             this.cbRep4.Name = "cbRep4";
             this.cbRep4.Size = new System.Drawing.Size(102, 24);
             this.cbRep4.TabIndex = 8;
@@ -113,7 +113,7 @@
             // 
             this.cbRep3.AutoSize = true;
             this.cbRep3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbRep3.Location = new System.Drawing.Point(231, 170);
+            this.cbRep3.Location = new System.Drawing.Point(318, 153);
             this.cbRep3.Name = "cbRep3";
             this.cbRep3.Size = new System.Drawing.Size(102, 24);
             this.cbRep3.TabIndex = 7;
@@ -124,7 +124,7 @@
             // 
             this.cbRep2.AutoSize = true;
             this.cbRep2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbRep2.Location = new System.Drawing.Point(231, 105);
+            this.cbRep2.Location = new System.Drawing.Point(318, 99);
             this.cbRep2.Name = "cbRep2";
             this.cbRep2.Size = new System.Drawing.Size(102, 24);
             this.cbRep2.TabIndex = 6;
@@ -135,7 +135,7 @@
             // 
             this.cbRep1.AutoSize = true;
             this.cbRep1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbRep1.Location = new System.Drawing.Point(231, 46);
+            this.cbRep1.Location = new System.Drawing.Point(318, 48);
             this.cbRep1.Name = "cbRep1";
             this.cbRep1.Size = new System.Drawing.Size(102, 24);
             this.cbRep1.TabIndex = 5;

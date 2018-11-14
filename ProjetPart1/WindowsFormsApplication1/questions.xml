@@ -35,20 +35,20 @@
       <D>utilisé en IA pour calculer le nombre de solutions prossibles</D>
     </Answers>
     <GoodAnswer>AC</GoodAnswer>
-    <Image>robotarm.jpg</Image>
+    <Image></Image>
     
 	</Question>
 		
     <Question Id="3">
-    <QuestionText>Un graphe est dit "connexe" si :</QuestionText>
+    <QuestionText>Sur le graphe présenté, à quel type de parcours correspond le parcours 1-2-4-5-7-8-3-6-9 ?</QuestionText>
     <Answers>
-      <A>il est possible de trouver un chemin permettant de relier n'importe quel couple de sommets</A>
-      <B>il existe une suite d'arcs différents permettant de partir d'un sommet et de revenir sur ce même sommet</B>
-      <C>si il est possible de mettre en correspondance bijective ses sommets avec ceux d’un deuxième graphe, et qu’il y a les mêmes relations entre les sommets des deux graphes</C>
-      <D>un graphe ne peut pas être connexe, par définition</D>
+      <A>Parcours en largeur d'abord</A>
+      <B>Parcours en hauteur d'abord</B>
+      <C>Parcours en longueur d'abord</C>
+      <D>Parcours en profondeur d'abord</D>
     </Answers>
-    <GoodAnswer>A</GoodAnswer>
-      <Image></Image>
+    <GoodAnswer>D</GoodAnswer>
+      <Image>parcours.jpg</Image>
 	</Question>
 		
     <Question Id="4">
@@ -168,7 +168,7 @@
     <QuestionText>En robotique, que différencie un capteur passif d'un capteur actif ?</QuestionText>
     <Answers>
       <A>L'un se met en veille lorsqu'une zone sans ostacle est détectée, l'autre non</A>
-      <B>L'un sur situe sur le robot, l'autre à distance</B>
+      <B>L'un se situe sur le robot, l'autre à distance</B>
       <C>L'un alerte de la présence d'un obstacle, l'autre non</C>
       <D>L'un détecte l'obstacle à son contact, l'autre par système de détection infrarouge</D>
     </Answers>
@@ -201,15 +201,15 @@
 	</Question>
 		
     <Question Id="16">
-    <QuestionText>Une heuristique :</QuestionText>
+    <QuestionText>Le graphe présenté est :</QuestionText>
     <Answers>
-      <A>Permet de résoudre le jeu d'Ehrenfeucht-Fraïssé</A>
-      <B>Est une proposition de chemin possible à suivre pour atteindre le sommet terminal</B>
-      <C>Est une estimation du coût restant pour atteindre le sommet terminal</C>
-      <D>Est le nombre de chemins possibles pour atteindre le sommet terminal</D>
+      <A>orienté</A>
+      <B>cyclique</B>
+      <C>connexe</C>
+      <D>non orienté</D>
     </Answers>
-    <GoodAnswer>C</GoodAnswer>
-      <Image></Image>
+    <GoodAnswer>AC</GoodAnswer>
+      <Image>graphe.png</Image>
 	</Question>
 	  
     <Question Id="17">
