@@ -93,7 +93,7 @@ namespace Pluscourtchemin
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            nxtButton.Visible = true; 
             listBoxgraphe.Items.Clear(); // ajouté par moi
 
             StreamReader monStreamReader = new StreamReader("graphe1.txt");
@@ -294,6 +294,23 @@ namespace Pluscourtchemin
         private void groupBox3_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {  
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            pbBox.Visible = false; 
+            algoBox.Visible = true; 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            algoBox.Visible = false;
+            cheminBox.Visible = true;
         }
     }
 }

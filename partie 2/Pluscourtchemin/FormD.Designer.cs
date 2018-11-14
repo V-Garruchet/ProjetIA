@@ -47,27 +47,26 @@
             this.tbRepFer = new System.Windows.Forms.RichTextBox();
             this.tbPCC = new System.Windows.Forms.RichTextBox();
             this.tbResPCC = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.pbBox = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.algoBox = new System.Windows.Forms.GroupBox();
+            this.cheminBox = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.nxtButton = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.pbBox.SuspendLayout();
+            this.algoBox.SuspendLayout();
+            this.cheminBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.Location = new System.Drawing.Point(16, 216);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(73, 30);
             this.button1.TabIndex = 0;
             this.button1.Text = "Init1";
             this.button1.UseVisualStyleBackColor = true;
@@ -76,34 +75,25 @@
             // 
             // textBox1
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox1.Location = new System.Drawing.Point(150, 66);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.Size = new System.Drawing.Size(98, 20);
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = "0";
             // 
             // textBox2
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox2.Location = new System.Drawing.Point(294, 66);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.Size = new System.Drawing.Size(98, 20);
             this.textBox2.TabIndex = 2;
             this.textBox2.Text = "6";
             // 
             // button2
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(32, 203);
+            this.button2.Location = new System.Drawing.Point(32, 191);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 23);
+            this.button2.Size = new System.Drawing.Size(96, 20);
             this.button2.TabIndex = 3;
             this.button2.Text = "Vérifier ";
             this.button2.UseVisualStyleBackColor = true;
@@ -111,9 +101,6 @@
             // 
             // label1
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(176, 50);
             this.label1.Name = "label1";
@@ -124,9 +111,6 @@
             // 
             // label2
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(323, 49);
             this.label2.Name = "label2";
@@ -136,37 +120,28 @@
             // 
             // listBox1
             // 
-            this.listBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(217, 64);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(128, 121);
+            this.listBox1.Size = new System.Drawing.Size(124, 108);
             this.listBox1.TabIndex = 6;
             // 
             // treeView1
             // 
-            this.treeView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.treeView1.Location = new System.Drawing.Point(369, 64);
             this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(147, 149);
+            this.treeView1.Size = new System.Drawing.Size(143, 142);
             this.treeView1.TabIndex = 7;
             // 
             // button3
             // 
             this.button3.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.button3.BackColor = System.Drawing.Color.Transparent;
             this.button3.FlatAppearance.BorderSize = 2;
             this.button3.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button3.Location = new System.Drawing.Point(16, 49);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 50);
+            this.button3.Size = new System.Drawing.Size(73, 57);
             this.button3.TabIndex = 8;
             this.button3.Text = "Générer le graphe";
             this.button3.UseVisualStyleBackColor = false;
@@ -174,24 +149,18 @@
             // 
             // listBoxgraphe
             // 
-            this.listBoxgraphe.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.listBoxgraphe.FormattingEnabled = true;
-            this.listBoxgraphe.Location = new System.Drawing.Point(217, 118);
+            this.listBoxgraphe.Location = new System.Drawing.Point(189, 119);
             this.listBoxgraphe.Margin = new System.Windows.Forms.Padding(2);
             this.listBoxgraphe.Name = "listBoxgraphe";
-            this.listBoxgraphe.Size = new System.Drawing.Size(100, 121);
+            this.listBoxgraphe.Size = new System.Drawing.Size(98, 121);
             this.listBoxgraphe.TabIndex = 9;
             // 
             // btnVerifO
             // 
-            this.btnVerifO.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnVerifO.Location = new System.Drawing.Point(375, 196);
             this.btnVerifO.Name = "btnVerifO";
-            this.btnVerifO.Size = new System.Drawing.Size(122, 23);
+            this.btnVerifO.Size = new System.Drawing.Size(129, 21);
             this.btnVerifO.TabIndex = 11;
             this.btnVerifO.Text = "Vérifier";
             this.btnVerifO.UseVisualStyleBackColor = true;
@@ -199,9 +168,6 @@
             // 
             // lbNO
             // 
-            this.lbNO.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.lbNO.AutoSize = true;
             this.lbNO.Location = new System.Drawing.Point(87, 32);
             this.lbNO.Name = "lbNO";
@@ -211,9 +177,6 @@
             // 
             // lbNF
             // 
-            this.lbNF.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.lbNF.AutoSize = true;
             this.lbNF.Location = new System.Drawing.Point(506, 29);
             this.lbNF.Name = "lbNF";
@@ -223,129 +186,143 @@
             // 
             // tbNO
             // 
-            this.tbNO.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.tbNO.Location = new System.Drawing.Point(126, 48);
             this.tbNO.Name = "tbNO";
-            this.tbNO.Size = new System.Drawing.Size(198, 132);
+            this.tbNO.Size = new System.Drawing.Size(199, 130);
             this.tbNO.TabIndex = 17;
             this.tbNO.Text = "";
             this.tbNO.TextChanged += new System.EventHandler(this.tbNO_TextChanged_1);
             // 
             // tbNF
             // 
-            this.tbNF.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.tbNF.Location = new System.Drawing.Point(541, 45);
             this.tbNF.Name = "tbNF";
-            this.tbNF.Size = new System.Drawing.Size(202, 135);
+            this.tbNF.Size = new System.Drawing.Size(189, 133);
             this.tbNF.TabIndex = 18;
             this.tbNF.Text = "";
             // 
             // tbRepOuv
             // 
-            this.tbRepOuv.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.tbRepOuv.Location = new System.Drawing.Point(154, 196);
             this.tbRepOuv.Name = "tbRepOuv";
-            this.tbRepOuv.Size = new System.Drawing.Size(148, 28);
+            this.tbRepOuv.Size = new System.Drawing.Size(136, 26);
             this.tbRepOuv.TabIndex = 19;
             this.tbRepOuv.Text = "";
             // 
             // tbRepFer
             // 
-            this.tbRepFer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.tbRepFer.Location = new System.Drawing.Point(571, 196);
             this.tbRepFer.Name = "tbRepFer";
-            this.tbRepFer.Size = new System.Drawing.Size(152, 28);
+            this.tbRepFer.Size = new System.Drawing.Size(116, 26);
             this.tbRepFer.TabIndex = 20;
             this.tbRepFer.Text = "";
             // 
             // tbPCC
             // 
-            this.tbPCC.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.tbPCC.Location = new System.Drawing.Point(32, 64);
             this.tbPCC.Name = "tbPCC";
-            this.tbPCC.Size = new System.Drawing.Size(100, 121);
+            this.tbPCC.Size = new System.Drawing.Size(96, 119);
             this.tbPCC.TabIndex = 21;
             this.tbPCC.Text = "";
             // 
             // tbResPCC
             // 
-            this.tbResPCC.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.tbResPCC.Location = new System.Drawing.Point(233, 193);
             this.tbResPCC.Name = "tbResPCC";
-            this.tbResPCC.Size = new System.Drawing.Size(100, 20);
+            this.tbResPCC.Size = new System.Drawing.Size(96, 20);
             this.tbResPCC.TabIndex = 22;
             // 
-            // groupBox1
+            // pbBox
             // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.listBoxgraphe);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(40, 113);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(420, 245);
-            this.groupBox1.TabIndex = 23;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Problème à résoudre : Aller du noeud A au noeud B, liés par le graphe G";
+            this.pbBox.Controls.Add(this.nxtButton);
+            this.pbBox.Controls.Add(this.label4);
+            this.pbBox.Controls.Add(this.listBoxgraphe);
+            this.pbBox.Controls.Add(this.button3);
+            this.pbBox.Controls.Add(this.textBox2);
+            this.pbBox.Controls.Add(this.textBox1);
+            this.pbBox.Controls.Add(this.button1);
+            this.pbBox.Controls.Add(this.label1);
+            this.pbBox.Controls.Add(this.label2);
+            this.pbBox.Location = new System.Drawing.Point(40, 98);
+            this.pbBox.Name = "pbBox";
+            this.pbBox.Size = new System.Drawing.Size(418, 252);
+            this.pbBox.TabIndex = 23;
+            this.pbBox.TabStop = false;
+            this.pbBox.Text = "Problème à résoudre : Aller du noeud A au noeud B, liés par le graphe G";
+            this.pbBox.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // groupBox2
+            // label4
             // 
-            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox2.Controls.Add(this.tbRepFer);
-            this.groupBox2.Controls.Add(this.tbRepOuv);
-            this.groupBox2.Controls.Add(this.tbNF);
-            this.groupBox2.Controls.Add(this.tbNO);
-            this.groupBox2.Controls.Add(this.lbNO);
-            this.groupBox2.Controls.Add(this.lbNF);
-            this.groupBox2.Controls.Add(this.btnVerifO);
-            this.groupBox2.Location = new System.Drawing.Point(190, 391);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(807, 236);
-            this.groupBox2.TabIndex = 24;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Appliquez l\'algorithme de Dijkstra pour aller du noeud A au noeud B";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(211, 104);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(53, 13);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Graphe G";
             // 
-            // groupBox3
+            // algoBox
             // 
-            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox3.Controls.Add(this.label7);
-            this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Controls.Add(this.label5);
-            this.groupBox3.Controls.Add(this.tbResPCC);
-            this.groupBox3.Controls.Add(this.tbPCC);
-            this.groupBox3.Controls.Add(this.treeView1);
-            this.groupBox3.Controls.Add(this.listBox1);
-            this.groupBox3.Controls.Add(this.button2);
-            this.groupBox3.Location = new System.Drawing.Point(628, 98);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(536, 243);
-            this.groupBox3.TabIndex = 25;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Chemin le plus court pour aller du noeud A au noeud B";
-            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
+            this.algoBox.Controls.Add(this.button5);
+            this.algoBox.Controls.Add(this.tbRepFer);
+            this.algoBox.Controls.Add(this.tbRepOuv);
+            this.algoBox.Controls.Add(this.tbNF);
+            this.algoBox.Controls.Add(this.tbNO);
+            this.algoBox.Controls.Add(this.lbNO);
+            this.algoBox.Controls.Add(this.lbNF);
+            this.algoBox.Controls.Add(this.btnVerifO);
+            this.algoBox.Location = new System.Drawing.Point(190, 391);
+            this.algoBox.Name = "algoBox";
+            this.algoBox.Size = new System.Drawing.Size(899, 234);
+            this.algoBox.TabIndex = 24;
+            this.algoBox.TabStop = false;
+            this.algoBox.Text = "Appliquez l\'algorithme de Dijkstra pour aller du noeud A au noeud B";
+            this.algoBox.Visible = false;
+            // 
+            // cheminBox
+            // 
+            this.cheminBox.Controls.Add(this.label7);
+            this.cheminBox.Controls.Add(this.label6);
+            this.cheminBox.Controls.Add(this.label5);
+            this.cheminBox.Controls.Add(this.tbResPCC);
+            this.cheminBox.Controls.Add(this.tbPCC);
+            this.cheminBox.Controls.Add(this.treeView1);
+            this.cheminBox.Controls.Add(this.listBox1);
+            this.cheminBox.Controls.Add(this.button2);
+            this.cheminBox.Location = new System.Drawing.Point(628, 98);
+            this.cheminBox.Name = "cheminBox";
+            this.cheminBox.Size = new System.Drawing.Size(532, 270);
+            this.cheminBox.TabIndex = 25;
+            this.cheminBox.TabStop = false;
+            this.cheminBox.Text = "Chemin le plus court pour aller du noeud A au noeud B";
+            this.cheminBox.Visible = false;
+            this.cheminBox.Enter += new System.EventHandler(this.groupBox3_Enter);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(429, 48);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(32, 13);
+            this.label7.TabIndex = 25;
+            this.label7.Text = "Arbre";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(231, 48);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(102, 13);
+            this.label6.TabIndex = 24;
+            this.label6.Text = "Chemin le plus court";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 48);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(154, 13);
+            this.label5.TabIndex = 23;
+            this.label5.Text = "Entrez le chemin le plus court : ";
             // 
             // label3
             // 
@@ -361,71 +338,44 @@
             this.label3.Text = "L\'algorithme de Dijkstra";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // label4
+            // nxtButton
             // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(237, 103);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 13);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Graphe G";
+            this.nxtButton.Location = new System.Drawing.Point(316, 196);
+            this.nxtButton.Name = "nxtButton";
+            this.nxtButton.Size = new System.Drawing.Size(86, 32);
+            this.nxtButton.TabIndex = 11;
+            this.nxtButton.Text = "Suivant";
+            this.nxtButton.UseVisualStyleBackColor = true;
+            this.nxtButton.Visible = false;
+            this.nxtButton.Click += new System.EventHandler(this.button4_Click);
             // 
-            // label5
+            // button5
             // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 48);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(154, 13);
-            this.label5.TabIndex = 23;
-            this.label5.Text = "Entrez le chemin le plus court : ";
-            // 
-            // label6
-            // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(231, 48);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(102, 13);
-            this.label6.TabIndex = 24;
-            this.label6.Text = "Chemin le plus court";
-            // 
-            // label7
-            // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(429, 48);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(32, 13);
-            this.label7.TabIndex = 25;
-            this.label7.Text = "Arbre";
+            this.button5.Location = new System.Drawing.Point(789, 189);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(84, 28);
+            this.button5.TabIndex = 26;
+            this.button5.Text = "Suivant";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // FormD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1239, 639);
+            this.ClientSize = new System.Drawing.Size(1235, 637);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.cheminBox);
+            this.Controls.Add(this.algoBox);
+            this.Controls.Add(this.pbBox);
             this.Name = "FormD";
             this.Text = "Form1";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            this.pbBox.ResumeLayout(false);
+            this.pbBox.PerformLayout();
+            this.algoBox.ResumeLayout(false);
+            this.algoBox.PerformLayout();
+            this.cheminBox.ResumeLayout(false);
+            this.cheminBox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -452,14 +402,16 @@
         private System.Windows.Forms.RichTextBox tbRepFer;
         private System.Windows.Forms.RichTextBox tbPCC;
         private System.Windows.Forms.TextBox tbResPCC;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox pbBox;
+        private System.Windows.Forms.GroupBox algoBox;
+        private System.Windows.Forms.GroupBox cheminBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button nxtButton;
+        private System.Windows.Forms.Button button5;
     }
 }
 
