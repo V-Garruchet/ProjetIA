@@ -17,9 +17,5 @@ namespace WindowsFormsApplication1
             InitializeComponent();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
