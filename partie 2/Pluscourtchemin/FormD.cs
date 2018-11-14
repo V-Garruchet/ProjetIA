@@ -24,6 +24,8 @@ namespace Pluscourtchemin
             InitializeComponent();
         }
 
+
+        // Crée la matrice correpondant au graphe
         private void button1_Click(object sender, EventArgs e)         
         {
            
@@ -41,10 +43,12 @@ namespace Pluscourtchemin
             matrice[5, 6] = 4;      matrice[6, 5] = 4;
         }
 
-        private void button2_Click(object sender, EventArgs e)      // traduit le graphe initial sous la forme 0 --> 3
+
+        // Affiche le plus court chemin sous la forme 0 --> 3
+        private void button2_Click(object sender, EventArgs e)      
         {
 
-            string res = ""; // ajouté par moi
+            string res = "";                // Ces 2 lignes permettent d'éviter que lorsqu'on rappuie sur le bouton, les informations s'ajoutent à nouveau en dessous
             listBox1.Items.Clear();
 
 
@@ -74,7 +78,7 @@ namespace Pluscourtchemin
 
 
 
-            // Ma partie ajoutée
+            // Cette partie de vérifier que l'entrée de l'utilisateur est la bonne
 
             string rep = "";
 
@@ -91,6 +95,8 @@ namespace Pluscourtchemin
 
         }
 
+
+        // Affiche le graphe sous la forme 0 --> 3
         private void button3_Click(object sender, EventArgs e)
         {
             nxtButton.Visible = true; 
@@ -167,6 +173,8 @@ namespace Pluscourtchemin
         }
 
 
+
+        // Permet de vérifier que les ouverts et fermés entrés par l'utilisateur sont les bons
         private void btnVerifO_Click(object sender, EventArgs e)
         {
             numinitial = Convert.ToInt32(textBox1.Text);
