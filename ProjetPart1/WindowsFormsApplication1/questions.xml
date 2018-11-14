@@ -249,15 +249,15 @@
 	</Question>
 		
     <Question Id="20">
-    <QuestionText>Que différencie l'espace des ouverts de l'espace des fermés ?</QuestionText>
+    <QuestionText>A quel graphe correspond la matrice d'adjacence représentée ?</QuestionText>
     <Answers>
-      <A>L'un contient des solutions testées et efficaces, l'autre des solutions testées et inefficaces </A>
-      <B>L'un contient des arêtes par lesquelles on est déjà passé, l'autre des arêtes encore inexplorées</B>
-      <C>L'un contient des graphes cycliques, l'autre des graphes linéaires</C>
-      <D>L'un contient des noeuds traités,l'autre des noeuds encore inexplorés</D>
+      <A>A</A>
+      <B>B</B>
+      <C>C</C>
+      <D>D</D>
     </Answers>
-    <GoodAnswer>D</GoodAnswer>
-      <Image></Image>
+    <GoodAnswer>B</GoodAnswer>
+      <Image>matAdj.png</Image>
 	</Question>
 
 </Questions>
