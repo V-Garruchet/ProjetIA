@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApplication1", "WindowsFormsApplication1\WindowsFormsApplication1.csproj", "{5B9227C5-0B8C-4913-A130-E6994ADAEBC8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeQCM", "WindowsFormsApplication1\LeQCM.csproj", "{5B9227C5-0B8C-4913-A130-E6994ADAEBC8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pluscourtchemin", "..\partie 2\Pluscourtchemin\Pluscourtchemin.csproj", "{6F7C0E5C-624A-42B0-87CF-AF86C721E2F7}"
 EndProject

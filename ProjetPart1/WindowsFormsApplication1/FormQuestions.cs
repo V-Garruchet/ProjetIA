@@ -13,11 +13,17 @@ namespace WindowsFormsApplication1
 {
     public partial class FormQuestions : Form
     {
-
+        // Liste des questions restantes
         public static List<int> QRest = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 };
+
+        // Réponse de la question actuelle
         public static string RepQenCours = "B";
+
+        // Score du participant
         public static int score = 0;
 
+
+        // Crée le form avec la question en cours en la fixant au même emplacement que la question précédente
         public FormQuestions()
         {
             this.StartPosition = FormStartPosition.Manual;
@@ -26,12 +32,10 @@ namespace WindowsFormsApplication1
         }
 
 
-
+        // Lance la question suivante (ou la page de score si on est à la fin) et vérifie si la/les réponse(s) sélectionnée(s) sont bonnes pour faire évoluer le score
         private void btSuivant_Click(object sender, EventArgs e)
-        {
-            
-
-            string rep="";
+        {          
+            string rep = "";
             if (cbRep1.Checked)
             {
                 rep += "A";
@@ -48,18 +52,18 @@ namespace WindowsFormsApplication1
             {
                 rep += "D";
             }
-            if(rep==RepQenCours && QRest.Count()!=20)
+            if(rep==RepQenCours && QRest.Count()!=20)       // La deuxième condition permet de ne pas compter de point sur la question 0 qui sert d'exemple
             {
                 score += 1;
             }
-            if (QRest.Count != 0)
+            if (QRest.Count != 0)                           // On affiche la question suivante car il en reste
             {
                 System.Threading.Thread monthread = new System.Threading.Thread(new System.Threading.ThreadStart(ouvrirnouveauform));
                 monthread.Start();
                 this.Close();                
             }
             else
-            {
+            {                                               // On était à la dernière question donc on ouvre la page des résultats
                 btSuivant.Text = "Résultats";
                 System.Threading.Thread monthread = new System.Threading.Thread(new System.Threading.ThreadStart(ouvrirResultats));
                 monthread.Start();
@@ -68,7 +72,7 @@ namespace WindowsFormsApplication1
         }
 
 
-
+        // Permet de générer la question et de l'associer à un form
         public static void ouvrirnouveauform()
         {
             FormQuestions form1 = new FormQuestions();
@@ -89,7 +93,7 @@ namespace WindowsFormsApplication1
         }
 
 
-
+        // Lance la page de résultat
         public static void ouvrirResultats()
         {
             Resultats formRes = new Resultats();
@@ -99,8 +103,8 @@ namespace WindowsFormsApplication1
 
 
 
-
-            private void btVerif_Click(object sender, EventArgs e)
+        // Permet de vérifier si notre réponse à la question est juste en mettant en valeur les bonnes (vertes) et mauvaises (rouges) réponses
+        private void btVerif_Click(object sender, EventArgs e)
         {
             if (cbRep1.Checked)
             {
@@ -137,9 +141,5 @@ namespace WindowsFormsApplication1
             btVerif.Enabled = false;
         }
 
-        private void pictureBoxQuestion_Click(object sender, EventArgs e)
-        {
-            
-        }
     }
 }

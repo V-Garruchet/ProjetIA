@@ -18,6 +18,8 @@ namespace WindowsFormsApplication1
             InitializeComponent();
         }
 
+
+        // Affiche la première question qui sert d'exemple
         private void btStart_Click(object sender, EventArgs e)
         {
             System.Threading.Thread monthread = new System.Threading.Thread(new System.Threading.ThreadStart(ouvrirnouveauform));
@@ -25,6 +27,8 @@ namespace WindowsFormsApplication1
             this.Close();
         }
 
+
+        // Crée question qui sert d'exemple
         public static void ouvrirnouveauform()
         {
             FormQuestions form1 = new FormQuestions();
