@@ -95,7 +95,6 @@
             this.pictureBoxQuestion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxQuestion.TabIndex = 9;
             this.pictureBoxQuestion.TabStop = false;
-            this.pictureBoxQuestion.Click += new System.EventHandler(this.pictureBoxQuestion_Click);
             // 
             // cbRep4
             // 
