@@ -17,15 +17,10 @@ namespace WindowsFormsApplication1
         public static List<int> QRest = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 };
         public static string RepQenCours = "B";
         public static int score = 0;
-        public static string urlImage;
 
         public FormQuestions()
         {
             InitializeComponent();
-
-            if (urlImage!=null && urlImage!="")
-                pictureBoxQuestion.Image = Image.FromFile("..\\..\\Images\\" + urlImage);
-                //pictureBoxQuestion.Image = Image.FromFile("..\\..\\Images\\robotarm.jpg");
         }
 
 
@@ -85,7 +80,8 @@ namespace WindowsFormsApplication1
             form1.cbRep3.Text = Q.Answers[2];
             form1.cbRep4.Text = Q.Answers[3];
             RepQenCours = Q.GoodAnswer;
-            urlImage = Q.Image;
+            if (Q.Image != null && Q.Image != "")
+                form1.pictureBoxQuestion.Image = Image.FromFile("..\\..\\Images\\" + Q.Image);
             
             Application.Run(form1);
         }
