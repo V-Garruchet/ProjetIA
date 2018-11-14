@@ -29,3 +29,12 @@ C:\Users\victor\Desktop\ensc\2A\IA\partie 2\Pluscourtchemin\obj\Debug\Pluscourtc
 H:\2A\IA\Projet\Notre projet\partie 2\Pluscourtchemin\bin\Debug\Pluscourtchemin.exe.config
 H:\2A\IA\Projet\Notre projet\partie 2\Pluscourtchemin\obj\Debug\Pluscourtchemin.exe
 H:\2A\IA\Projet\Notre projet\partie 2\Pluscourtchemin\obj\Debug\Pluscourtchemin.pdb
+H:\Do\2A\IA\ProjetIA\partie 2\Pluscourtchemin\bin\Debug\Pluscourtchemin.exe.config
+H:\Do\2A\IA\ProjetIA\partie 2\Pluscourtchemin\obj\Debug\Pluscourtchemin.exe
+H:\Do\2A\IA\ProjetIA\partie 2\Pluscourtchemin\obj\Debug\Pluscourtchemin.pdb
+H:\Do\2A\IA\ProjetIA\partie 2\Pluscourtchemin\bin\Debug\Pluscourtchemin.exe
+H:\Do\2A\IA\ProjetIA\partie 2\Pluscourtchemin\bin\Debug\Pluscourtchemin.pdb
+H:\Do\2A\IA\ProjetIA\partie 2\Pluscourtchemin\obj\Debug\Pluscourtchemin.csprojResolveAssemblyReference.cache
+H:\Do\2A\IA\ProjetIA\partie 2\Pluscourtchemin\obj\Debug\Pluscourtchemin.Form1.resources
+H:\Do\2A\IA\ProjetIA\partie 2\Pluscourtchemin\obj\Debug\Pluscourtchemin.Properties.Resources.resources
+H:\Do\2A\IA\ProjetIA\partie 2\Pluscourtchemin\obj\Debug\Pluscourtchemin.csproj.GenerateResource.Cache
