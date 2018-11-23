@@ -19,6 +19,10 @@ namespace Pluscourtchemin
         static public int numinitial;
         static public int numfinal;
 
+
+        static public int scorePart2 = 0;
+
+
         public FormD()
         {
             InitializeComponent();
@@ -89,10 +93,17 @@ namespace Pluscourtchemin
             }
 
             if (res == rep)
+            {
                 tbResPCC.Text = "Vrai";
+                scorePart2 += 1;
+            }
             else
                 tbResPCC.Text = "Faux";
 
+
+            // On affiche le bouton pour aller aux résultats et on bloque la modification de la réponse saisie pour éviter la triche
+
+            btnRes.Visible = true;
         }
 
 
@@ -103,6 +114,7 @@ namespace Pluscourtchemin
             listBoxgraphe.Items.Clear(); // ajouté par moi
 
             StreamReader monStreamReader = new StreamReader("graphe1.txt");
+
 
             // Lecture du fichier avec un while, évidemment !
             // 1ère ligne : "nombre de noeuds du graphe
@@ -262,6 +274,7 @@ namespace Pluscourtchemin
             tbRepOuv.Text = resNO;
 
 
+
             int nbreLigneNF = tbNF.Lines.Length;
             string resNF = "Vrai";
             if (nbreLigneNF == fermes.Count())
@@ -279,6 +292,10 @@ namespace Pluscourtchemin
                 resNF = "Faux";
 
             tbRepFer.Text = resNF;
+
+
+            if (resNO == "Vrai" && resNF == "Vrai")
+                scorePart2 += 2;
 
         }
 
@@ -320,5 +337,22 @@ namespace Pluscourtchemin
             algoBox.Visible = false;
             cheminBox.Visible = true;
         }
+
+        private void btnRes_Click(object sender, EventArgs e)
+        {
+            System.Threading.Thread monthread2 = new System.Threading.Thread(new System.Threading.ThreadStart(ouvrirRes));
+            monthread2.Start();
+            this.Close();
+        }
+
+
+        // Lance les résultats
+        public static void ouvrirRes()
+        {
+            ResultatsPart2 formRes = new ResultatsPart2(scorePart2);
+            Application.Run(formRes);
+            
+        }
+    
     }
 }

@@ -19,7 +19,7 @@ namespace WindowsFormsApplication1
         // Réponse de la question actuelle
         public static string RepQenCours = "B";
 
-        // Score du participant
+        // Score du participant au QCM /20
         public static int score = 0;
 
 
@@ -63,7 +63,7 @@ namespace WindowsFormsApplication1
                 this.Close();                
             }
             else
-            {                                               // On était à la dernière question donc on ouvre la page des résultats
+            {                                               // On était à la dernière question donc on ouvre la page des résultats du QCM
                 btSuivant.Text = "Résultats";
                 System.Threading.Thread monthread = new System.Threading.Thread(new System.Threading.ThreadStart(ouvrirResultats));
                 monthread.Start();

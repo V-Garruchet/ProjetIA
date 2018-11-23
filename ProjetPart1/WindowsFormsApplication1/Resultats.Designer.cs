@@ -35,6 +35,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btnPart2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -98,12 +99,23 @@
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
             // 
+            // btnPart2
+            // 
+            this.btnPart2.Location = new System.Drawing.Point(533, 387);
+            this.btnPart2.Name = "btnPart2";
+            this.btnPart2.Size = new System.Drawing.Size(79, 31);
+            this.btnPart2.TabIndex = 5;
+            this.btnPart2.Text = "Partie 2";
+            this.btnPart2.UseVisualStyleBackColor = true;
+            this.btnPart2.Click += new System.EventHandler(this.btnPart2_Click);
+            // 
             // Resultats
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(655, 441);
+            this.Controls.Add(this.btnPart2);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.labelCommentaire);
             this.Controls.Add(this.lbRes);
@@ -128,5 +140,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Button btnPart2;
     }
 }

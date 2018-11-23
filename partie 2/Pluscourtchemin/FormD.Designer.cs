@@ -48,15 +48,16 @@
             this.tbPCC = new System.Windows.Forms.RichTextBox();
             this.tbResPCC = new System.Windows.Forms.TextBox();
             this.pbBox = new System.Windows.Forms.GroupBox();
+            this.nxtButton = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.algoBox = new System.Windows.Forms.GroupBox();
+            this.button5 = new System.Windows.Forms.Button();
             this.cheminBox = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.nxtButton = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnRes = new System.Windows.Forms.Button();
             this.pbBox.SuspendLayout();
             this.algoBox.SuspendLayout();
             this.cheminBox.SuspendLayout();
@@ -251,6 +252,17 @@
             this.pbBox.Text = "Problème à résoudre : Aller du noeud A au noeud B, liés par le graphe G";
             this.pbBox.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // nxtButton
+            // 
+            this.nxtButton.Location = new System.Drawing.Point(316, 196);
+            this.nxtButton.Name = "nxtButton";
+            this.nxtButton.Size = new System.Drawing.Size(86, 32);
+            this.nxtButton.TabIndex = 11;
+            this.nxtButton.Text = "Suivant";
+            this.nxtButton.UseVisualStyleBackColor = true;
+            this.nxtButton.Visible = false;
+            this.nxtButton.Click += new System.EventHandler(this.button4_Click);
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -277,6 +289,16 @@
             this.algoBox.TabStop = false;
             this.algoBox.Text = "Appliquez l\'algorithme de Dijkstra pour aller du noeud A au noeud B";
             this.algoBox.Visible = false;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(789, 189);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(84, 28);
+            this.button5.TabIndex = 26;
+            this.button5.Text = "Suivant";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // cheminBox
             // 
@@ -338,32 +360,23 @@
             this.label3.Text = "L\'algorithme de Dijkstra";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // nxtButton
+            // btnRes
             // 
-            this.nxtButton.Location = new System.Drawing.Point(316, 196);
-            this.nxtButton.Name = "nxtButton";
-            this.nxtButton.Size = new System.Drawing.Size(86, 32);
-            this.nxtButton.TabIndex = 11;
-            this.nxtButton.Text = "Suivant";
-            this.nxtButton.UseVisualStyleBackColor = true;
-            this.nxtButton.Visible = false;
-            this.nxtButton.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(789, 189);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(84, 28);
-            this.button5.TabIndex = 26;
-            this.button5.Text = "Suivant";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btnRes.Location = new System.Drawing.Point(1041, 36);
+            this.btnRes.Name = "btnRes";
+            this.btnRes.Size = new System.Drawing.Size(75, 23);
+            this.btnRes.TabIndex = 26;
+            this.btnRes.Text = "Résultats";
+            this.btnRes.UseVisualStyleBackColor = true;
+            this.btnRes.Visible = false;
+            this.btnRes.Click += new System.EventHandler(this.btnRes_Click);
             // 
             // FormD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1235, 637);
+            this.Controls.Add(this.btnRes);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cheminBox);
             this.Controls.Add(this.algoBox);
@@ -412,6 +425,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button nxtButton;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnRes;
     }
 }
 
