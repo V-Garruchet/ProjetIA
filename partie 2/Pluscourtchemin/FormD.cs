@@ -243,13 +243,11 @@ namespace Pluscourtchemin
 
         private void button4_Click(object sender, EventArgs e)
         {
-            pbBox.Visible = false; 
             algoBox.Visible = true; 
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            algoBox.Visible = false;
             cheminBox.Visible = true;
 
 

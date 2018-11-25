@@ -31,7 +31,7 @@
     <Answers>
       <A>utilisé en IA pour les jeux à deux, l'un contre l'autre</A>
       <B>utilisé en IA pour trouver le plus court chemin dans un graphe</B>
-      <C>utilisé en IA pour déduire le nombre de coup restant en supposant qu'un adversaire joue d'une manière optimale</C>
+      <C>utilisé en IA pour déduire le nombre de coups restants en supposant qu'un adversaire joue d'une manière optimale</C>
       <D>utilisé en IA pour calculer le nombre de solutions prossibles</D>
     </Answers>
     <GoodAnswer>AC</GoodAnswer>
@@ -106,7 +106,7 @@
       <A>Une matrice qui mémorise la présence ou l'absence d'une relation entre des noeuds</A>
       <B>Une matrice qui mémorise la présence ou l'absence d'une relation entre des arcs</B>
       <C>Une matrice inversible</C>
-      <D>Une matrice de trace et de déterminants égaux</D>
+      <D>Une matrice de trace et de déterminant égaux</D>
     </Answers>
     <GoodAnswer>A</GoodAnswer>
       <Image></Image>
@@ -219,18 +219,19 @@
       <B>Les dames</B>
       <C>Le solitaire</C>
       <D>Les échecs</D>
+      
     </Answers>
-    <GoodAnswer>B</GoodAnswer>
+    <GoodAnswer>ABD</GoodAnswer>
       <Image></Image>
 	</Question>
 	  
     <Question Id="18">
-    <QuestionText>Quelle est la différence entre l'arrête et l'arc d'un graphe ?</QuestionText>
+    <QuestionText>Quelle est la différence entre l'arête et l'arc d'un graphe ?</QuestionText>
     <Answers>
       <A>Aucune. C'est la même chose.</A>
-      <B>L'arc est une relation symétrique entre deux noeuds, contrairement à l'arrête</B>
-      <C>L'arc est une relation asymétrique entre deux noeuds, contrairement à l'arrête</C>
-      <D>L'arrête est une relation entre deux noeuds et l'arc une relation reliant un noeud à lui-même</D>
+      <B>L'arc est une relation symétrique entre deux noeuds, contrairement à l'arête</B>
+      <C>L'arc est une relation asymétrique entre deux noeuds, contrairement à l'arête</C>
+      <D>L'arête est une relation entre deux noeuds et l'arc une relation reliant un noeud à lui-même</D>
     </Answers>
     <GoodAnswer>C</GoodAnswer>
       <Image></Image>
