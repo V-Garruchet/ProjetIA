@@ -60,6 +60,12 @@
             this.btnRes = new System.Windows.Forms.Button();
             this.tbEntreOuvert = new System.Windows.Forms.TextBox();
             this.tbEntreFerme = new System.Windows.Forms.TextBox();
+            this.lbNoeudEnCours = new System.Windows.Forms.Label();
+            this.tbNoeudEnCours = new System.Windows.Forms.TextBox();
+            this.lbIndic = new System.Windows.Forms.Label();
+            this.tbDistParent = new System.Windows.Forms.TextBox();
+            this.rtbResumeArbre = new System.Windows.Forms.RichTextBox();
+            this.btnVerifNoeud = new System.Windows.Forms.Button();
             this.pbBox.SuspendLayout();
             this.algoBox.SuspendLayout();
             this.cheminBox.SuspendLayout();
@@ -94,7 +100,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(32, 191);
+            this.button2.Location = new System.Drawing.Point(392, 29);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(96, 20);
             this.button2.TabIndex = 3;
@@ -123,14 +129,14 @@
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(217, 64);
+            this.listBox1.Location = new System.Drawing.Point(206, 50);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(124, 108);
+            this.listBox1.Size = new System.Drawing.Size(124, 30);
             this.listBox1.TabIndex = 6;
             // 
             // treeView1
             // 
-            this.treeView1.Location = new System.Drawing.Point(369, 64);
+            this.treeView1.Location = new System.Drawing.Point(365, 104);
             this.treeView1.Name = "treeView1";
             this.treeView1.Size = new System.Drawing.Size(143, 142);
             this.treeView1.TabIndex = 7;
@@ -220,15 +226,15 @@
             // 
             // tbPCC
             // 
-            this.tbPCC.Location = new System.Drawing.Point(32, 64);
+            this.tbPCC.Location = new System.Drawing.Point(33, 49);
             this.tbPCC.Name = "tbPCC";
-            this.tbPCC.Size = new System.Drawing.Size(96, 119);
+            this.tbPCC.Size = new System.Drawing.Size(96, 30);
             this.tbPCC.TabIndex = 21;
             this.tbPCC.Text = "";
             // 
             // tbResPCC
             // 
-            this.tbResPCC.Location = new System.Drawing.Point(233, 193);
+            this.tbResPCC.Location = new System.Drawing.Point(221, 233);
             this.tbResPCC.Name = "tbResPCC";
             this.tbResPCC.Size = new System.Drawing.Size(96, 20);
             this.tbResPCC.TabIndex = 22;
@@ -304,6 +310,12 @@
             // 
             // cheminBox
             // 
+            this.cheminBox.Controls.Add(this.btnVerifNoeud);
+            this.cheminBox.Controls.Add(this.rtbResumeArbre);
+            this.cheminBox.Controls.Add(this.tbDistParent);
+            this.cheminBox.Controls.Add(this.lbIndic);
+            this.cheminBox.Controls.Add(this.tbNoeudEnCours);
+            this.cheminBox.Controls.Add(this.lbNoeudEnCours);
             this.cheminBox.Controls.Add(this.label7);
             this.cheminBox.Controls.Add(this.label6);
             this.cheminBox.Controls.Add(this.label5);
@@ -317,13 +329,13 @@
             this.cheminBox.Size = new System.Drawing.Size(532, 270);
             this.cheminBox.TabIndex = 25;
             this.cheminBox.TabStop = false;
-            this.cheminBox.Text = "Chemin le plus court pour aller du noeud A au noeud B";
+            this.cheminBox.Text = "Arbre pour aller du noeud A au noeud B";
             this.cheminBox.Visible = false;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(429, 48);
+            this.label7.Location = new System.Drawing.Point(420, 73);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(32, 13);
             this.label7.TabIndex = 25;
@@ -332,7 +344,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(231, 48);
+            this.label6.Location = new System.Drawing.Point(228, 33);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(102, 13);
             this.label6.TabIndex = 24;
@@ -341,7 +353,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 48);
+            this.label5.Location = new System.Drawing.Point(6, 33);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(154, 13);
             this.label5.TabIndex = 23;
@@ -384,6 +396,56 @@
             this.tbEntreFerme.Name = "tbEntreFerme";
             this.tbEntreFerme.Size = new System.Drawing.Size(199, 20);
             this.tbEntreFerme.TabIndex = 28;
+            // 
+            // lbNoeudEnCours
+            // 
+            this.lbNoeudEnCours.AutoSize = true;
+            this.lbNoeudEnCours.Location = new System.Drawing.Point(6, 148);
+            this.lbNoeudEnCours.Name = "lbNoeudEnCours";
+            this.lbNoeudEnCours.Size = new System.Drawing.Size(89, 13);
+            this.lbNoeudEnCours.TabIndex = 26;
+            this.lbNoeudEnCours.Text = "Noeud en cours :";
+            // 
+            // tbNoeudEnCours
+            // 
+            this.tbNoeudEnCours.Location = new System.Drawing.Point(173, 148);
+            this.tbNoeudEnCours.Name = "tbNoeudEnCours";
+            this.tbNoeudEnCours.Size = new System.Drawing.Size(42, 20);
+            this.tbNoeudEnCours.TabIndex = 27;
+            // 
+            // lbIndic
+            // 
+            this.lbIndic.AutoSize = true;
+            this.lbIndic.Location = new System.Drawing.Point(6, 193);
+            this.lbIndic.Name = "lbIndic";
+            this.lbIndic.Size = new System.Drawing.Size(103, 13);
+            this.lbIndic.TabIndex = 28;
+            this.lbIndic.Text = "Distance au parent :";
+            // 
+            // tbDistParent
+            // 
+            this.tbDistParent.Location = new System.Drawing.Point(173, 190);
+            this.tbDistParent.Name = "tbDistParent";
+            this.tbDistParent.Size = new System.Drawing.Size(42, 20);
+            this.tbDistParent.TabIndex = 28;
+            // 
+            // rtbResumeArbre
+            // 
+            this.rtbResumeArbre.Location = new System.Drawing.Point(221, 104);
+            this.rtbResumeArbre.Name = "rtbResumeArbre";
+            this.rtbResumeArbre.Size = new System.Drawing.Size(96, 106);
+            this.rtbResumeArbre.TabIndex = 27;
+            this.rtbResumeArbre.Text = "";
+            // 
+            // btnVerifNoeud
+            // 
+            this.btnVerifNoeud.Location = new System.Drawing.Point(23, 233);
+            this.btnVerifNoeud.Name = "btnVerifNoeud";
+            this.btnVerifNoeud.Size = new System.Drawing.Size(96, 20);
+            this.btnVerifNoeud.TabIndex = 27;
+            this.btnVerifNoeud.Text = "Vérifier ";
+            this.btnVerifNoeud.UseVisualStyleBackColor = true;
+            this.btnVerifNoeud.Click += new System.EventHandler(this.btnVerifNoeud_Click);
             // 
             // FormD
             // 
@@ -442,6 +504,12 @@
         private System.Windows.Forms.Button btnRes;
         private System.Windows.Forms.TextBox tbEntreFerme;
         private System.Windows.Forms.TextBox tbEntreOuvert;
+        private System.Windows.Forms.TextBox tbDistParent;
+        private System.Windows.Forms.Label lbIndic;
+        private System.Windows.Forms.TextBox tbNoeudEnCours;
+        private System.Windows.Forms.Label lbNoeudEnCours;
+        private System.Windows.Forms.RichTextBox rtbResumeArbre;
+        private System.Windows.Forms.Button btnVerifNoeud;
     }
 }
 

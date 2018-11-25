@@ -11,6 +11,9 @@ namespace Pluscourtchemin
         public List<GenericNode> L_Ouverts;
         public List<GenericNode> L_Fermes;
 
+        public static int numNoeud = 0;
+        public static List<GenericNode> listNoeudsInconnus = new List<GenericNode> { };
+
         public int CountInOpenList()
         {
             return L_Ouverts.Count;
@@ -176,7 +179,7 @@ namespace Pluscourtchemin
 
         // Si on veut afficher l'arbre de recherche, il suffit de passer un treeview en paramètres
         // Celui-ci est mis à jour avec les noeuds de la liste des fermés, on ne tient pas compte des ouverts
-        public void GetSearchTree( TreeView TV )
+        public void GetSearchTree( TreeView TV , bool show)
         {
             if (L_Fermes == null) return;
             if (L_Fermes.Count == 0) return;
@@ -187,19 +190,32 @@ namespace Pluscourtchemin
             TreeNode TN = new TreeNode ( L_Fermes[0].ToString() );
             TV.Nodes.Add(TN);
 
-            AjouteBranche ( L_Fermes[0], TN );
+            AjouteBranche ( L_Fermes[0], TN, show );
         }
 
-        // AjouteBranche est exclusivement appelée par GetSearchTree; les noeuds sont ajoutés de manière récursive
-        private void AjouteBranche( GenericNode GN, TreeNode TN)
+
+        // AjouteBranche (true) est exclusivement appelée par GetSearchTree; les noeuds sont ajoutés de manière récursive
+        // AjouteBranche (false) permet de créer l'arbre mais en n'indiquant que le nom du noeud de départ
+        private void AjouteBranche(GenericNode GN, TreeNode TN, bool show)
         {
             foreach (GenericNode GNfils in GN.GetEnfants())
             {
-                TreeNode TNfils = new TreeNode(GNfils.ToString());
-                TN.Nodes.Add(TNfils);
-                if (GNfils.GetEnfants().Count > 0) AjouteBranche(GNfils, TNfils); 
+                if (show)
+                {
+                    TreeNode TNfils = new TreeNode(GNfils.ToString());
+                    TN.Nodes.Add(TNfils);
+                    if (GNfils.GetEnfants().Count > 0) AjouteBranche(GNfils, TNfils,show);
+                }
+                else
+                {
+                    TreeNode TNfils = new TreeNode("N" + numNoeud.ToString());
+                    listNoeudsInconnus.Add(GNfils);
+                    TN.Nodes.Add(TNfils);
+                    numNoeud += 1;
+                    if (GNfils.GetEnfants().Count > 0) AjouteBranche(GNfils, TNfils,show);
+                }
             }
         }
-  
+
     }
 }

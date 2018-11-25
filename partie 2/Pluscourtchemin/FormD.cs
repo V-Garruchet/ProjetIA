@@ -20,7 +20,9 @@ namespace Pluscourtchemin
         static public int numfinal;
 
 
-        static public int scorePart2 = 2;
+        static public int scorePart2OuvFer = 2;
+        static public int scorePart2Arbre = 1;
+        static public int compteurNoeud = 0;
 
         static List<int> listeOuvert = new List<int> { };
         static List<int> listeFerme = new List<int> { };
@@ -83,11 +85,11 @@ namespace Pluscourtchemin
                 N1 = N2;
             }
 
-            g.GetSearchTree(treeView1);
+            g.GetSearchTree(treeView1, true);
 
 
 
-            // Cette partie de vérifier que l'entrée de l'utilisateur est la bonne
+            // Cette partie permet de vérifier que l'entrée de l'utilisateur est la bonne
 
             string rep = "";
 
@@ -100,7 +102,7 @@ namespace Pluscourtchemin
             if (res == rep)
             {
                 tbResPCC.Text = "Vrai";
-                scorePart2 += 1;
+                //scorePart2 += 1;
             }
             else
                 tbResPCC.Text = "Faux";
@@ -241,6 +243,7 @@ namespace Pluscourtchemin
                 {
                     ligneOuv+="-";
                     button5.Visible = true;
+                    btnVerifO.Visible = false;
                 }               
 
 
@@ -290,7 +293,7 @@ namespace Pluscourtchemin
 
                 if (resNF != "Vrai" || resNO != "Vrai")
                 {
-                    scorePart2 = 0;
+                    scorePart2OuvFer = 0;
                 }
             }
 
@@ -307,6 +310,17 @@ namespace Pluscourtchemin
         {
             algoBox.Visible = false;
             cheminBox.Visible = true;
+
+
+            // On affiche l'arbre avec les noeuds non renseignés
+            numinitial = Convert.ToInt32(textBox1.Text);
+            numfinal = Convert.ToInt32(textBox2.Text);
+            SearchTree g = new SearchTree();
+            Node2 N0 = new Node2();
+            N0.numero = numinitial;
+            List<GenericNode> solution = g.RechercheSolutionAEtoile(N0);
+            g.GetSearchTree(treeView1, false);
+            lbNoeudEnCours.Text = "N0 : ";
         }
 
         private void btnRes_Click(object sender, EventArgs e)
@@ -320,10 +334,41 @@ namespace Pluscourtchemin
         // Lance les résultats
         public static void ouvrirRes()
         {
-            ResultatsPart2 formRes = new ResultatsPart2(scorePart2);
+            ResultatsPart2 formRes = new ResultatsPart2(scorePart2OuvFer + scorePart2Arbre);
             Application.Run(formRes);
             
         }
 
+        private void btnVerifNoeud_Click(object sender, EventArgs e)
+        {
+            tbResPCC.Text = "Vrai";
+            // Si notre noeud n'est pas le bon ou que la distance est fausse
+            if (tbNoeudEnCours.Text != SearchTree.listNoeudsInconnus[compteurNoeud].ToString() || tbDistParent.Text != (SearchTree.listNoeudsInconnus[compteurNoeud].GetGCost() - SearchTree.listNoeudsInconnus[compteurNoeud].GetNoeud_Parent().GetGCost()).ToString())
+            {
+                scorePart2Arbre = 0;
+                tbResPCC.Text = "Faux";
+            }
+            
+            rtbResumeArbre.Text += lbNoeudEnCours.Text + " " + SearchTree.listNoeudsInconnus[compteurNoeud].ToString() + " -> dist : " + (SearchTree.listNoeudsInconnus[compteurNoeud].GetGCost() - SearchTree.listNoeudsInconnus[compteurNoeud].GetNoeud_Parent().GetGCost()).ToString() + Environment.NewLine;
+            compteurNoeud += 1;
+            lbNoeudEnCours.Text = "N" + compteurNoeud.ToString() + " : ";
+            tbNoeudEnCours.Text = "";
+            tbDistParent.Text = "";
+            if (compteurNoeud == SearchTree.listNoeudsInconnus.Count())
+            {
+                btnRes.Visible = true;
+                btnVerifNoeud.Visible = false;
+                btnVerifNoeud.IsAccessible = false;
+
+                // On affiche l'arbre avec les noeuds renseignés
+                numinitial = Convert.ToInt32(textBox1.Text);
+                numfinal = Convert.ToInt32(textBox2.Text);
+                SearchTree g = new SearchTree();
+                Node2 N0 = new Node2();
+                N0.numero = numinitial;
+                List<GenericNode> solution = g.RechercheSolutionAEtoile(N0);
+                g.GetSearchTree(treeView1, false);
+            }
+        }
     }
 }
