@@ -55,65 +55,6 @@ namespace Pluscourtchemin
         }
 
 
-        // Affiche le plus court chemin sous la forme 0 --> 3
-        private void button2_Click(object sender, EventArgs e)      
-        {
-
-            string res = "";                // Ces 2 lignes permettent d'éviter que lorsqu'on rappuie sur le bouton, les informations s'ajoutent à nouveau en dessous
-            listBox1.Items.Clear();
-
-
-            numinitial = Convert.ToInt32(textBox1.Text);
-            numfinal = Convert.ToInt32(textBox2.Text);
-            SearchTree g = new SearchTree();
-            Node2 N0 = new Node2();
-            N0.numero = numinitial;
-            List<GenericNode> solution = g.RechercheSolutionAEtoile(N0);
-
-            Node2 N1 = N0;
-            for (int i=1; i < solution.Count; i++)
-            {
-                Node2 N2 = (Node2)solution[i];
-                listBox1.Items.Add(Convert.ToString(N1.numero) 
-                     + "--->"  + Convert.ToString(N2.numero)
-                     + "   : " +Convert.ToString(matrice[N1.numero,N2.numero]));
-
-
-                res += Convert.ToString(N1.numero) + "--->" + Convert.ToString(N2.numero) + "   : " + Convert.ToString(matrice[N1.numero, N2.numero]);  // ajouté par moi
-
-
-                N1 = N2;
-            }
-
-            g.GetSearchTree(treeView1, true);
-
-
-
-            // Cette partie permet de vérifier que l'entrée de l'utilisateur est la bonne
-
-            string rep = "";
-
-            int nbreLigne = tbPCC.Lines.Length;
-            for (int l = 0; l < nbreLigne; l++)
-            {
-                rep += tbPCC.Lines[l];
-            }
-
-            if (res == rep)
-            {
-                tbResPCC.Text = "Vrai";
-                //scorePart2 += 1;
-            }
-            else
-                tbResPCC.Text = "Faux";
-
-
-            // On affiche le bouton pour aller aux résultats et on bloque la modification de la réponse saisie pour éviter la triche
-
-            btnRes.Visible = true;
-        }
-
-
         // Affiche le graphe sous la forme 0 --> 3
         private void button3_Click(object sender, EventArgs e)
         {
@@ -343,13 +284,13 @@ namespace Pluscourtchemin
         {
             tbResPCC.Text = "Vrai";
             // Si notre noeud n'est pas le bon ou que la distance est fausse
-            if (tbNoeudEnCours.Text != SearchTree.listNoeudsInconnus[compteurNoeud].ToString() || tbDistParent.Text != (SearchTree.listNoeudsInconnus[compteurNoeud].GetGCost() - SearchTree.listNoeudsInconnus[compteurNoeud].GetNoeud_Parent().GetGCost()).ToString())
+            if (tbNoeudEnCours.Text != SearchTree.listNoeudsInconnus[compteurNoeud].ToString() || tbDistParent.Text != SearchTree.listNoeudsInconnus[compteurNoeud].GetGCost().ToString())
             {
                 scorePart2Arbre = 0;
                 tbResPCC.Text = "Faux";
             }
             
-            rtbResumeArbre.Text += lbNoeudEnCours.Text + " " + SearchTree.listNoeudsInconnus[compteurNoeud].ToString() + " -> dist : " + (SearchTree.listNoeudsInconnus[compteurNoeud].GetGCost() - SearchTree.listNoeudsInconnus[compteurNoeud].GetNoeud_Parent().GetGCost()).ToString() + Environment.NewLine;
+            rtbResumeArbre.Text += lbNoeudEnCours.Text + " " + SearchTree.listNoeudsInconnus[compteurNoeud].ToString() + " -> dist : " + SearchTree.listNoeudsInconnus[compteurNoeud].GetGCost().ToString() + Environment.NewLine;
             compteurNoeud += 1;
             lbNoeudEnCours.Text = "N" + compteurNoeud.ToString() + " : ";
             tbNoeudEnCours.Text = "";
@@ -370,5 +311,7 @@ namespace Pluscourtchemin
                 g.GetSearchTree(treeView1, false);
             }
         }
+
+
     }
 }
