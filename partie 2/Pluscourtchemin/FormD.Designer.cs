@@ -58,6 +58,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnRes = new System.Windows.Forms.Button();
+            this.tbEntreOuvert = new System.Windows.Forms.TextBox();
+            this.tbEntreFerme = new System.Windows.Forms.TextBox();
             this.pbBox.SuspendLayout();
             this.algoBox.SuspendLayout();
             this.cheminBox.SuspendLayout();
@@ -108,7 +110,6 @@
             this.label1.Size = new System.Drawing.Size(49, 13);
             this.label1.TabIndex = 4;
             this.label1.Text = "Noeud A";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -191,30 +192,29 @@
             this.tbNO.Name = "tbNO";
             this.tbNO.Size = new System.Drawing.Size(199, 130);
             this.tbNO.TabIndex = 17;
-            this.tbNO.Text = "";
-            this.tbNO.TextChanged += new System.EventHandler(this.tbNO_TextChanged_1);
+            this.tbNO.Text = "0\n";
             // 
             // tbNF
             // 
             this.tbNF.Location = new System.Drawing.Point(541, 45);
             this.tbNF.Name = "tbNF";
-            this.tbNF.Size = new System.Drawing.Size(189, 133);
+            this.tbNF.Size = new System.Drawing.Size(199, 133);
             this.tbNF.TabIndex = 18;
-            this.tbNF.Text = "";
+            this.tbNF.Text = "-\n";
             // 
             // tbRepOuv
             // 
-            this.tbRepOuv.Location = new System.Drawing.Point(154, 196);
+            this.tbRepOuv.Location = new System.Drawing.Point(39, 99);
             this.tbRepOuv.Name = "tbRepOuv";
-            this.tbRepOuv.Size = new System.Drawing.Size(136, 26);
+            this.tbRepOuv.Size = new System.Drawing.Size(59, 26);
             this.tbRepOuv.TabIndex = 19;
             this.tbRepOuv.Text = "";
             // 
             // tbRepFer
             // 
-            this.tbRepFer.Location = new System.Drawing.Point(571, 196);
+            this.tbRepFer.Location = new System.Drawing.Point(769, 99);
             this.tbRepFer.Name = "tbRepFer";
-            this.tbRepFer.Size = new System.Drawing.Size(116, 26);
+            this.tbRepFer.Size = new System.Drawing.Size(74, 26);
             this.tbRepFer.TabIndex = 20;
             this.tbRepFer.Text = "";
             // 
@@ -250,7 +250,6 @@
             this.pbBox.TabIndex = 23;
             this.pbBox.TabStop = false;
             this.pbBox.Text = "Problème à résoudre : Aller du noeud A au noeud B, liés par le graphe G";
-            this.pbBox.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // nxtButton
             // 
@@ -274,6 +273,8 @@
             // 
             // algoBox
             // 
+            this.algoBox.Controls.Add(this.tbEntreFerme);
+            this.algoBox.Controls.Add(this.tbEntreOuvert);
             this.algoBox.Controls.Add(this.button5);
             this.algoBox.Controls.Add(this.tbRepFer);
             this.algoBox.Controls.Add(this.tbRepOuv);
@@ -298,6 +299,7 @@
             this.button5.TabIndex = 26;
             this.button5.Text = "Suivant";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Visible = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // cheminBox
@@ -317,7 +319,6 @@
             this.cheminBox.TabStop = false;
             this.cheminBox.Text = "Chemin le plus court pour aller du noeud A au noeud B";
             this.cheminBox.Visible = false;
-            this.cheminBox.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
             // label7
             // 
@@ -358,7 +359,6 @@
             this.label3.Size = new System.Drawing.Size(405, 42);
             this.label3.TabIndex = 10;
             this.label3.Text = "L\'algorithme de Dijkstra";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // btnRes
             // 
@@ -370,6 +370,20 @@
             this.btnRes.UseVisualStyleBackColor = true;
             this.btnRes.Visible = false;
             this.btnRes.Click += new System.EventHandler(this.btnRes_Click);
+            // 
+            // tbEntreOuvert
+            // 
+            this.tbEntreOuvert.Location = new System.Drawing.Point(126, 197);
+            this.tbEntreOuvert.Name = "tbEntreOuvert";
+            this.tbEntreOuvert.Size = new System.Drawing.Size(199, 20);
+            this.tbEntreOuvert.TabIndex = 27;
+            // 
+            // tbEntreFerme
+            // 
+            this.tbEntreFerme.Location = new System.Drawing.Point(541, 197);
+            this.tbEntreFerme.Name = "tbEntreFerme";
+            this.tbEntreFerme.Size = new System.Drawing.Size(199, 20);
+            this.tbEntreFerme.TabIndex = 28;
             // 
             // FormD
             // 
@@ -426,6 +440,8 @@
         private System.Windows.Forms.Button nxtButton;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button btnRes;
+        private System.Windows.Forms.TextBox tbEntreFerme;
+        private System.Windows.Forms.TextBox tbEntreOuvert;
     }
 }
 

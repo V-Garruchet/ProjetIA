@@ -20,7 +20,12 @@ namespace Pluscourtchemin
         static public int numfinal;
 
 
-        static public int scorePart2 = 0;
+        static public int scorePart2 = 2;
+
+        static List<int> listeOuvert = new List<int> { };
+        static List<int> listeFerme = new List<int> { };
+        static List<string> ouverts = new List<string> { "0" };
+        static List<string> fermes = new List<string> { "-" };
 
 
         public FormD()
@@ -189,30 +194,35 @@ namespace Pluscourtchemin
         // Permet de vérifier que les ouverts et fermés entrés par l'utilisateur sont les bons
         private void btnVerifO_Click(object sender, EventArgs e)
         {
-            numinitial = Convert.ToInt32(textBox1.Text);
-            numfinal = Convert.ToInt32(textBox2.Text);
-            List<int> listeOuvert = new List<int> { numinitial };
-            List<int> listeFerme = new List<int> {  };
-            List<string> ouverts = new List<string> { "0" };
-            List<string> fermes = new List<string> { "-" };
+            if (listeFerme.Count() == 0 && listeOuvert.Count() == 0)
+            {
+                numinitial = Convert.ToInt32(textBox1.Text);
+                listeOuvert.Add(numinitial);
+                numfinal = Convert.ToInt32(textBox2.Text);
+            }
 
-            while (listeFerme.Count()==0 || listeFerme[listeFerme.Count()-1] != numfinal) 
+
+
+            if (listeFerme.Count() == 0 || listeFerme[listeFerme.Count() - 1] != numfinal)
             {
 
-                listeFerme.Add(numinitial);
-                listeOuvert.RemoveAt(0);
+                listeFerme.Add(numinitial);     // On ajoute dans les fermés le premier de la listed des ouverts
+                listeOuvert.RemoveAt(0);        // On supprime le premier terme de la liste des ouverts qui passe dans les fermés
 
+
+                // On crée la liste des ouverts par rapport au dernier fermé ajouté
                 for (int i = 0; i < nbnodes; i++)
                 {
-                    if (matrice[numinitial, i] != -1 && listeFerme.Contains(i)==false && listeOuvert.Contains(i) == false)
+                    if (matrice[numinitial, i] != -1 && listeFerme.Contains(i) == false && listeOuvert.Contains(i) == false)
                     {
                         listeOuvert.Add(i);
                     }
                 }
 
+                // On met la liste des ouverts à un format particulier pour pouvoir le comparer à l'entrée de l'utilisateur
+                string ligneOuv = "";
                 if (listeOuvert.Count != 0)
                 {
-                    string ligneOuv = "";
                     for (int j = 0; j < listeOuvert.Count; j++)
                     {
                         if (j == listeOuvert.Count - 1)
@@ -226,7 +236,15 @@ namespace Pluscourtchemin
                     }
                     ouverts.Add(ligneOuv);
                 }
+                // On ajoute le caractère - à la dernière liste d'ouvert pour montrer qu'elle est vide
+                else
+                {
+                    ligneOuv+="-";
+                    button5.Visible = true;
+                }               
 
+
+                // On met la liste des fermés à un format particulier pour pouvoir le comparer à l'entrée de l'utilisateur
                 string ligneFer = "";
                 for (int k = 0; k < listeFerme.Count; k++)
                 {
@@ -242,89 +260,42 @@ namespace Pluscourtchemin
                 fermes.Add(ligneFer);
 
 
-
+                // On prépare l'échange du premier terme des ouverts en fermé
                 if (listeOuvert.Count() != 0)
                 {
                     numinitial = listeOuvert[0];
-                }            
-
-            }
-
-            if (listeOuvert.Count() == 0)
-            {
-                ouverts.Add("-");
-            }
+                }
 
 
-            int nbreLigneNO = tbNO.Lines.Length;
-            string resNO = "Vrai";
-            if (nbreLigneNO == ouverts.Count())
-            {
-                for (int lNO = 0; lNO < nbreLigneNO; lNO++)
+                // On va maintenant comparer l'entrée de l'utilisateur à la liste des ouverts et fermés actuel
+                string resNF = "Vrai";
+                string resNO = "Vrai";
+                if (tbEntreFerme.Text != ligneFer)
                 {
-                    if (tbNO.Lines[lNO] != ouverts[lNO])
-                    {
-                        resNO = "Faux";
-                        break;
-                    }
+                    resNF = "Faux";
+                }
+
+                if (tbEntreOuvert.Text != ligneOuv)
+                {
+                    resNO = "Faux";
+                }
+
+                tbRepFer.Text = resNF;
+                tbRepOuv.Text = resNO;
+
+                tbNO.Text += ligneOuv + Environment.NewLine;
+                tbNF.Text += ligneFer + Environment.NewLine;
+                tbEntreFerme.Text = "";
+                tbEntreOuvert.Text = "";
+
+                if (resNF != "Vrai" || resNO != "Vrai")
+                {
+                    scorePart2 = 0;
                 }
             }
-            else
-                resNO = "Faux";
-            tbRepOuv.Text = resNO;
-
-
-
-            int nbreLigneNF = tbNF.Lines.Length;
-            string resNF = "Vrai";
-            if (nbreLigneNF == fermes.Count())
-            {
-                for (int lNF = 0; lNF < nbreLigneNF; lNF++)
-                {
-                    if (tbNF.Lines[lNF] != fermes[lNF])
-                    {
-                        resNF = "Faux";
-                        break;
-                    }
-                }
-            }
-            else
-                resNF = "Faux";
-
-            tbRepFer.Text = resNF;
-
-
-            if (resNO == "Vrai" && resNF == "Vrai")
-                scorePart2 += 2;
 
         }
 
-
-
-        private void tbNO_TextChanged_1(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox3_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {  
-
-        }
 
         private void button4_Click(object sender, EventArgs e)
         {
@@ -353,6 +324,6 @@ namespace Pluscourtchemin
             Application.Run(formRes);
             
         }
-    
+
     }
 }
