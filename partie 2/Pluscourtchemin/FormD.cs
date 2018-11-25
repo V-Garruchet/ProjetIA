@@ -308,7 +308,7 @@ namespace Pluscourtchemin
                 Node2 N0 = new Node2();
                 N0.numero = numinitial;
                 List<GenericNode> solution = g.RechercheSolutionAEtoile(N0);
-                g.GetSearchTree(treeView1, false);
+                g.GetSearchTree(treeView1, true);
             }
         }
 

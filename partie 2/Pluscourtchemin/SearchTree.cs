@@ -202,7 +202,7 @@ namespace Pluscourtchemin
             {
                 if (show)
                 {
-                    TreeNode TNfils = new TreeNode(GNfils.ToString());
+                    TreeNode TNfils = new TreeNode(GNfils.ToString()+ " : " + GNfils.GetGCost().ToString());
                     TN.Nodes.Add(TNfils);
                     if (GNfils.GetEnfants().Count > 0) AjouteBranche(GNfils, TNfils,show);
                 }
