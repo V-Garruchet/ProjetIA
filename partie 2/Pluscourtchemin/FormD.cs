@@ -42,7 +42,7 @@ namespace Pluscourtchemin
             nxtButton.Visible = true; 
             listBoxgraphe.Items.Clear(); // ajouté par moi
 
-            StreamReader monStreamReader = new StreamReader("graphe1.txt");
+            StreamReader monStreamReader = new StreamReader("../../Graphes/graphe1.txt");
 
             // Lecture du fichier avec un while, évidemment !
             // 1ère ligne : "noeuds de départ
