@@ -101,6 +101,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\graphe.png" />
     <Content Include="Images\matAdj.png" />
     <Content Include="Images\parcours.jpg" />
     <Content Include="questions.xml" />
