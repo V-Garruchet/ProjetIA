@@ -41,8 +41,9 @@ namespace Pluscourtchemin
         {
             nxtButton.Visible = true; 
             listBoxgraphe.Items.Clear(); // ajouté par moi
-
-            StreamReader monStreamReader = new StreamReader("../../Graphes/graphe1.txt");
+            Random r = new Random(); 
+            int nombre = r.Next(1,3); 
+            StreamReader monStreamReader = new StreamReader("../../Graphes/graphe" +nombre.ToString()+".txt");
 
             // Lecture du fichier avec un while, évidemment !
             // 1ère ligne : "noeuds de départ
