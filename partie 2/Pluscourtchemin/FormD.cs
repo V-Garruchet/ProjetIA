@@ -42,7 +42,15 @@ namespace Pluscourtchemin
             nxtButton.Visible = true; 
             listBoxgraphe.Items.Clear(); // ajouté par moi
 
-            StreamReader monStreamReader = new StreamReader("../../Graphes/graphe1.txt");
+            string path = "../../Graphes/";
+            int nbFichiers = Directory.GetFiles(path, "*.*", SearchOption.AllDirectories).Length;
+            // Renvoie le nombre de fichiers contenus dans le dossier ET les sous-dossiers
+
+            Random rd = new Random();
+            int idGraph = rd.Next(1, nbFichiers);
+
+            StreamReader monStreamReader = new StreamReader("../../Graphes/graphe"+idGraph.ToString()+".txt");
+
 
             // Lecture du fichier avec un while, évidemment !
             // 1ère ligne : "noeuds de départ
