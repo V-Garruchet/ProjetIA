@@ -70,6 +70,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(150, 66);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(98, 20);
             this.textBox1.TabIndex = 1;
             // 
@@ -77,6 +78,7 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(294, 66);
             this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(98, 20);
             this.textBox2.TabIndex = 2;
             // 
@@ -160,6 +162,7 @@
             // 
             this.tbNO.Location = new System.Drawing.Point(126, 48);
             this.tbNO.Name = "tbNO";
+            this.tbNO.ReadOnly = true;
             this.tbNO.Size = new System.Drawing.Size(199, 130);
             this.tbNO.TabIndex = 17;
             this.tbNO.Text = "";
@@ -168,6 +171,7 @@
             // 
             this.tbNF.Location = new System.Drawing.Point(541, 45);
             this.tbNF.Name = "tbNF";
+            this.tbNF.ReadOnly = true;
             this.tbNF.Size = new System.Drawing.Size(199, 133);
             this.tbNF.TabIndex = 18;
             this.tbNF.Text = "-\n";
@@ -176,6 +180,7 @@
             // 
             this.tbRepOuv.Location = new System.Drawing.Point(39, 99);
             this.tbRepOuv.Name = "tbRepOuv";
+            this.tbRepOuv.ReadOnly = true;
             this.tbRepOuv.Size = new System.Drawing.Size(59, 26);
             this.tbRepOuv.TabIndex = 19;
             this.tbRepOuv.Text = "";
@@ -184,6 +189,7 @@
             // 
             this.tbRepFer.Location = new System.Drawing.Point(769, 99);
             this.tbRepFer.Name = "tbRepFer";
+            this.tbRepFer.ReadOnly = true;
             this.tbRepFer.Size = new System.Drawing.Size(74, 26);
             this.tbRepFer.TabIndex = 20;
             this.tbRepFer.Text = "";
@@ -192,6 +198,7 @@
             // 
             this.tbResPCC.Location = new System.Drawing.Point(81, 203);
             this.tbResPCC.Name = "tbResPCC";
+            this.tbResPCC.ReadOnly = true;
             this.tbResPCC.Size = new System.Drawing.Size(61, 20);
             this.tbResPCC.TabIndex = 22;
             // 
@@ -332,6 +339,7 @@
             // 
             this.rtbResumeArbre.Location = new System.Drawing.Point(221, 77);
             this.rtbResumeArbre.Name = "rtbResumeArbre";
+            this.rtbResumeArbre.ReadOnly = true;
             this.rtbResumeArbre.Size = new System.Drawing.Size(111, 142);
             this.rtbResumeArbre.TabIndex = 27;
             this.rtbResumeArbre.Text = "";
