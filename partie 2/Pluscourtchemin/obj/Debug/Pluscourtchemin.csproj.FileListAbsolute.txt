@@ -70,3 +70,13 @@ C:\Users\victor\Desktop\ensc\2A\IA\ProjetIA\partie 2\Pluscourtchemin\obj\Debug\P
 C:\Users\victor\Desktop\ensc\2A\IA\ProjetIA\partie 2\Pluscourtchemin\obj\Debug\Pluscourtchemin.pdb
 H:\Do\2A\IA\ProjetIA\partie 2\Pluscourtchemin\obj\Debug\Pluscourtchemin.FormD.resources
 H:\Do\2A\IA\ProjetIA\partie 2\Pluscourtchemin\obj\Debug\Pluscourtchemin.ResultatsPart2.resources
+H:\2A\IA\ProjetIA\partie 2\Pluscourtchemin\bin\Debug\Pluscourtchemin.exe.config
+H:\2A\IA\ProjetIA\partie 2\Pluscourtchemin\bin\Debug\Pluscourtchemin.exe
+H:\2A\IA\ProjetIA\partie 2\Pluscourtchemin\bin\Debug\Pluscourtchemin.pdb
+H:\2A\IA\ProjetIA\partie 2\Pluscourtchemin\obj\Debug\Pluscourtchemin.csprojResolveAssemblyReference.cache
+H:\2A\IA\ProjetIA\partie 2\Pluscourtchemin\obj\Debug\Pluscourtchemin.FormD.resources
+H:\2A\IA\ProjetIA\partie 2\Pluscourtchemin\obj\Debug\Pluscourtchemin.Properties.Resources.resources
+H:\2A\IA\ProjetIA\partie 2\Pluscourtchemin\obj\Debug\Pluscourtchemin.ResultatsPart2.resources
+H:\2A\IA\ProjetIA\partie 2\Pluscourtchemin\obj\Debug\Pluscourtchemin.csproj.GenerateResource.Cache
+H:\2A\IA\ProjetIA\partie 2\Pluscourtchemin\obj\Debug\Pluscourtchemin.exe
+H:\2A\IA\ProjetIA\partie 2\Pluscourtchemin\obj\Debug\Pluscourtchemin.pdb
