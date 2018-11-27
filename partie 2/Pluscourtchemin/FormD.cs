@@ -47,10 +47,9 @@ namespace Pluscourtchemin
             // Renvoie le nombre de fichiers contenus dans le dossier ET les sous-dossiers
 
             Random rd = new Random();
-            int idGraph = rd.Next(1, nbFichiers);
+            int idGraph = rd.Next(1, nbFichiers+1);
 
             StreamReader monStreamReader = new StreamReader("../../Graphes/graphe"+idGraph.ToString()+".txt");
-
 
             // Lecture du fichier avec un while, évidemment !
             // 1ère ligne : "noeuds de départ
