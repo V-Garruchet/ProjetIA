@@ -22,5 +22,18 @@ namespace Pluscourtchemin
         {
             Close();
         }
+
+        private void lbQuote_Click(object sender, EventArgs e)
+        {
+            if (Int32.Parse(lbScorePart2.Text) < 10)
+            {
+                lbQuote.Text = "La peine emplie mon coeur.";
+            }
+
+            if (Int32.Parse(lbScorePart2.Text) > 10)
+            {
+                lbQuote.Text = "La joie emplie mon coeur.";
+            }
+        }
     }
 }
