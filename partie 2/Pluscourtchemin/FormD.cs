@@ -45,9 +45,16 @@ namespace Pluscourtchemin
             StreamReader monStreamReader = new StreamReader("graphe1.txt");
 
             // Lecture du fichier avec un while, évidemment !
-            // 1ère ligne : "nombre de noeuds du graphe
+            // 1ère ligne : "noeuds de départ
+            // 2ème ligne : "noeuds de fin
             string ligne = monStreamReader.ReadLine();
-            int i = 0;
+            textBox1.Text = ligne.ToString();
+            tbNO.Text = ligne.ToString() + Environment.NewLine;
+            ligne = monStreamReader.ReadLine();
+            textBox2.Text = ligne.ToString();
+            // 3ème ligne : "nombre de noeuds du graphe
+            int i = 2;
+            ligne = monStreamReader.ReadLine();
             while (ligne[i] != ':') i++;
             string strnbnoeuds = "";
             i++; // On dépasse le ":"

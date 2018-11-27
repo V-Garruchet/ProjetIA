@@ -72,7 +72,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(98, 20);
             this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "0";
             // 
             // textBox2
             // 
@@ -80,7 +79,6 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(98, 20);
             this.textBox2.TabIndex = 2;
-            this.textBox2.Text = "6";
             // 
             // label1
             // 
@@ -164,7 +162,7 @@
             this.tbNO.Name = "tbNO";
             this.tbNO.Size = new System.Drawing.Size(199, 130);
             this.tbNO.TabIndex = 17;
-            this.tbNO.Text = "0\n";
+            this.tbNO.Text = "";
             // 
             // tbNF
             // 
