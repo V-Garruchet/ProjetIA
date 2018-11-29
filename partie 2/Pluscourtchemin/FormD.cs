@@ -37,9 +37,9 @@ namespace Pluscourtchemin
 
 
         // Affiche le graphe sous la forme 0 --> 3
-        private void button3_Click(object sender, EventArgs e)
+        private void btnGenerateGraph_Click(object sender, EventArgs e)
         {
-            nxtButton.Visible = true; 
+            btnNext1.Visible = true; 
             listBoxgraphe.Items.Clear(); // ajouté par moi
 
             string path = "../../Graphes/";
@@ -55,10 +55,10 @@ namespace Pluscourtchemin
             // 1ère ligne : "noeuds de départ
             // 2ème ligne : "noeuds de fin
             string ligne = monStreamReader.ReadLine();
-            textBox1.Text = ligne.ToString();
+            tbNoeudA.Text = ligne.ToString();
             tbNO.Text = ligne.ToString() + Environment.NewLine;
             ligne = monStreamReader.ReadLine();
-            textBox2.Text = ligne.ToString();
+            tbNoeudB.Text = ligne.ToString();
             // 3ème ligne : "nombre de noeuds du graphe
             int i = 2;
             ligne = monStreamReader.ReadLine();
@@ -129,13 +129,13 @@ namespace Pluscourtchemin
 
 
         // Permet de vérifier que les ouverts et fermés entrés par l'utilisateur sont les bons
-        private void btnVerifO_Click(object sender, EventArgs e)
+        private void btnVerif_Click(object sender, EventArgs e)
         {
             if (listeFerme.Count() == 0 && listeOuvert.Count() == 0)
             {
-                numinitial = Convert.ToInt32(textBox1.Text);
+                numinitial = Convert.ToInt32(tbNoeudA.Text);
                 listeOuvert.Add(numinitial);
-                numfinal = Convert.ToInt32(textBox2.Text);
+                numfinal = Convert.ToInt32(tbNoeudB.Text);
             }
 
 
@@ -177,8 +177,8 @@ namespace Pluscourtchemin
                 else
                 {
                     ligneOuv+="-";
-                    button5.Visible = true;
-                    btnVerifO.Visible = false;
+                    btnNext2.Visible = true;
+                    btnVerif.Visible = false;
                 }               
 
 
@@ -235,19 +235,25 @@ namespace Pluscourtchemin
         }
 
 
-        private void button4_Click(object sender, EventArgs e)
+        private void btnNext1_Click(object sender, EventArgs e)
         {
-            algoBox.Visible = true; 
+            algoBox.Visible = true;
+            btnGenerateGraph.Enabled = false;
+            btnGenerateGraph.Visible = false;
+            btnNext1.Enabled = false;
+            btnNext1.Visible = false;
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void btnNext2_Click(object sender, EventArgs e)
         {
             cheminBox.Visible = true;
+            btnNext2.Enabled = false;
+            btnNext2.Visible = false;
 
 
             // On affiche l'arbre avec les noeuds non renseignés
-            numinitial = Convert.ToInt32(textBox1.Text);
-            numfinal = Convert.ToInt32(textBox2.Text);
+            numinitial = Convert.ToInt32(tbNoeudA.Text);
+            numfinal = Convert.ToInt32(tbNoeudB.Text);
             SearchTree g = new SearchTree();
             Node2 N0 = new Node2();
             N0.numero = numinitial;
@@ -294,8 +300,8 @@ namespace Pluscourtchemin
                 btnVerifNoeud.IsAccessible = false;
 
                 // On affiche l'arbre avec les noeuds renseignés
-                numinitial = Convert.ToInt32(textBox1.Text);
-                numfinal = Convert.ToInt32(textBox2.Text);
+                numinitial = Convert.ToInt32(tbNoeudA.Text);
+                numfinal = Convert.ToInt32(tbNoeudB.Text);
                 SearchTree g = new SearchTree();
                 Node2 N0 = new Node2();
                 N0.numero = numinitial;

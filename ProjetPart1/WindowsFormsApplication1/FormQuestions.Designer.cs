@@ -151,6 +151,7 @@
             this.Controls.Add(this.btSuivant);
             this.Controls.Add(this.btVerif);
             this.Controls.Add(this.lbQ);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FormQuestions";
             this.Text = "FormQuestions";
             this.groupBox1.ResumeLayout(false);

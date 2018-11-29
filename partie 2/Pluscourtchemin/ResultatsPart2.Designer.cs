@@ -101,6 +101,7 @@
             this.Controls.Add(this.lbScorePart2);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.pictureBox2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "ResultatsPart2";
             this.Text = "ResultatsPart2";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

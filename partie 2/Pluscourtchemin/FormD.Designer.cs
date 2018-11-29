@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbNoeudA = new System.Windows.Forms.TextBox();
+            this.tbNoeudB = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.treeView1 = new System.Windows.Forms.TreeView();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnGenerateGraph = new System.Windows.Forms.Button();
             this.listBoxgraphe = new System.Windows.Forms.ListBox();
-            this.btnVerifO = new System.Windows.Forms.Button();
+            this.btnVerif = new System.Windows.Forms.Button();
             this.lbNO = new System.Windows.Forms.Label();
             this.lbNF = new System.Windows.Forms.Label();
             this.tbNO = new System.Windows.Forms.RichTextBox();
@@ -44,12 +44,12 @@
             this.tbRepFer = new System.Windows.Forms.RichTextBox();
             this.tbResPCC = new System.Windows.Forms.TextBox();
             this.pbBox = new System.Windows.Forms.GroupBox();
-            this.nxtButton = new System.Windows.Forms.Button();
+            this.btnNext1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.algoBox = new System.Windows.Forms.GroupBox();
             this.tbEntreFerme = new System.Windows.Forms.TextBox();
             this.tbEntreOuvert = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnNext2 = new System.Windows.Forms.Button();
             this.cheminBox = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btnRes = new System.Windows.Forms.Button();
@@ -66,26 +66,26 @@
             this.cheminBox.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox1
+            // tbNoeudA
             // 
-            this.textBox1.Location = new System.Drawing.Point(150, 66);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(98, 20);
-            this.textBox1.TabIndex = 1;
+            this.tbNoeudA.Location = new System.Drawing.Point(20, 137);
+            this.tbNoeudA.Name = "tbNoeudA";
+            this.tbNoeudA.ReadOnly = true;
+            this.tbNoeudA.Size = new System.Drawing.Size(98, 20);
+            this.tbNoeudA.TabIndex = 1;
             // 
-            // textBox2
+            // tbNoeudB
             // 
-            this.textBox2.Location = new System.Drawing.Point(294, 66);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(98, 20);
-            this.textBox2.TabIndex = 2;
+            this.tbNoeudB.Location = new System.Drawing.Point(124, 137);
+            this.tbNoeudB.Name = "tbNoeudB";
+            this.tbNoeudB.ReadOnly = true;
+            this.tbNoeudB.Size = new System.Drawing.Size(98, 20);
+            this.tbNoeudB.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(176, 50);
+            this.label1.Location = new System.Drawing.Point(42, 121);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 13);
             this.label1.TabIndex = 4;
@@ -94,7 +94,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(323, 49);
+            this.label2.Location = new System.Drawing.Point(147, 121);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(49, 13);
             this.label2.TabIndex = 5;
@@ -102,43 +102,43 @@
             // 
             // treeView1
             // 
-            this.treeView1.Location = new System.Drawing.Point(364, 77);
+            this.treeView1.Location = new System.Drawing.Point(364, 51);
             this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(143, 142);
+            this.treeView1.Size = new System.Drawing.Size(143, 168);
             this.treeView1.TabIndex = 7;
             // 
-            // button3
+            // btnGenerateGraph
             // 
-            this.button3.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatAppearance.BorderSize = 2;
-            this.button3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button3.Location = new System.Drawing.Point(16, 49);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(73, 57);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "Générer le graphe";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnGenerateGraph.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.btnGenerateGraph.BackColor = System.Drawing.Color.Transparent;
+            this.btnGenerateGraph.FlatAppearance.BorderSize = 2;
+            this.btnGenerateGraph.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnGenerateGraph.Location = new System.Drawing.Point(71, 49);
+            this.btnGenerateGraph.Name = "btnGenerateGraph";
+            this.btnGenerateGraph.Size = new System.Drawing.Size(113, 39);
+            this.btnGenerateGraph.TabIndex = 8;
+            this.btnGenerateGraph.Text = "Générer le graphe";
+            this.btnGenerateGraph.UseVisualStyleBackColor = false;
+            this.btnGenerateGraph.Click += new System.EventHandler(this.btnGenerateGraph_Click);
             // 
             // listBoxgraphe
             // 
             this.listBoxgraphe.FormattingEnabled = true;
-            this.listBoxgraphe.Location = new System.Drawing.Point(189, 119);
+            this.listBoxgraphe.Location = new System.Drawing.Point(266, 51);
             this.listBoxgraphe.Margin = new System.Windows.Forms.Padding(2);
             this.listBoxgraphe.Name = "listBoxgraphe";
-            this.listBoxgraphe.Size = new System.Drawing.Size(98, 121);
+            this.listBoxgraphe.Size = new System.Drawing.Size(121, 186);
             this.listBoxgraphe.TabIndex = 9;
             // 
-            // btnVerifO
+            // btnVerif
             // 
-            this.btnVerifO.Location = new System.Drawing.Point(375, 196);
-            this.btnVerifO.Name = "btnVerifO";
-            this.btnVerifO.Size = new System.Drawing.Size(129, 21);
-            this.btnVerifO.TabIndex = 11;
-            this.btnVerifO.Text = "Vérifier";
-            this.btnVerifO.UseVisualStyleBackColor = true;
-            this.btnVerifO.Click += new System.EventHandler(this.btnVerifO_Click);
+            this.btnVerif.Location = new System.Drawing.Point(366, 223);
+            this.btnVerif.Name = "btnVerif";
+            this.btnVerif.Size = new System.Drawing.Size(129, 21);
+            this.btnVerif.TabIndex = 11;
+            this.btnVerif.Text = "Vérifier";
+            this.btnVerif.UseVisualStyleBackColor = true;
+            this.btnVerif.Click += new System.EventHandler(this.btnVerif_Click);
             // 
             // lbNO
             // 
@@ -163,7 +163,7 @@
             this.tbNO.Location = new System.Drawing.Point(126, 48);
             this.tbNO.Name = "tbNO";
             this.tbNO.ReadOnly = true;
-            this.tbNO.Size = new System.Drawing.Size(199, 130);
+            this.tbNO.Size = new System.Drawing.Size(199, 169);
             this.tbNO.TabIndex = 17;
             this.tbNO.Text = "";
             // 
@@ -172,13 +172,13 @@
             this.tbNF.Location = new System.Drawing.Point(541, 45);
             this.tbNF.Name = "tbNF";
             this.tbNF.ReadOnly = true;
-            this.tbNF.Size = new System.Drawing.Size(199, 133);
+            this.tbNF.Size = new System.Drawing.Size(199, 172);
             this.tbNF.TabIndex = 18;
             this.tbNF.Text = "-\n";
             // 
             // tbRepOuv
             // 
-            this.tbRepOuv.Location = new System.Drawing.Point(39, 99);
+            this.tbRepOuv.Location = new System.Drawing.Point(35, 125);
             this.tbRepOuv.Name = "tbRepOuv";
             this.tbRepOuv.ReadOnly = true;
             this.tbRepOuv.Size = new System.Drawing.Size(59, 26);
@@ -187,7 +187,7 @@
             // 
             // tbRepFer
             // 
-            this.tbRepFer.Location = new System.Drawing.Point(769, 99);
+            this.tbRepFer.Location = new System.Drawing.Point(785, 125);
             this.tbRepFer.Name = "tbRepFer";
             this.tbRepFer.ReadOnly = true;
             this.tbRepFer.Size = new System.Drawing.Size(74, 26);
@@ -204,12 +204,12 @@
             // 
             // pbBox
             // 
-            this.pbBox.Controls.Add(this.nxtButton);
+            this.pbBox.Controls.Add(this.btnNext1);
             this.pbBox.Controls.Add(this.label4);
             this.pbBox.Controls.Add(this.listBoxgraphe);
-            this.pbBox.Controls.Add(this.button3);
-            this.pbBox.Controls.Add(this.textBox2);
-            this.pbBox.Controls.Add(this.textBox1);
+            this.pbBox.Controls.Add(this.btnGenerateGraph);
+            this.pbBox.Controls.Add(this.tbNoeudB);
+            this.pbBox.Controls.Add(this.tbNoeudA);
             this.pbBox.Controls.Add(this.label1);
             this.pbBox.Controls.Add(this.label2);
             this.pbBox.Location = new System.Drawing.Point(40, 98);
@@ -219,21 +219,21 @@
             this.pbBox.TabStop = false;
             this.pbBox.Text = "Problème à résoudre : Aller du noeud A au noeud B, liés par le graphe G";
             // 
-            // nxtButton
+            // btnNext1
             // 
-            this.nxtButton.Location = new System.Drawing.Point(316, 196);
-            this.nxtButton.Name = "nxtButton";
-            this.nxtButton.Size = new System.Drawing.Size(86, 32);
-            this.nxtButton.TabIndex = 11;
-            this.nxtButton.Text = "Suivant";
-            this.nxtButton.UseVisualStyleBackColor = true;
-            this.nxtButton.Visible = false;
-            this.nxtButton.Click += new System.EventHandler(this.button4_Click);
+            this.btnNext1.Location = new System.Drawing.Point(83, 191);
+            this.btnNext1.Name = "btnNext1";
+            this.btnNext1.Size = new System.Drawing.Size(86, 32);
+            this.btnNext1.TabIndex = 11;
+            this.btnNext1.Text = "Suivant";
+            this.btnNext1.UseVisualStyleBackColor = true;
+            this.btnNext1.Visible = false;
+            this.btnNext1.Click += new System.EventHandler(this.btnNext1_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(211, 104);
+            this.label4.Location = new System.Drawing.Point(299, 36);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(53, 13);
             this.label4.TabIndex = 10;
@@ -243,17 +243,17 @@
             // 
             this.algoBox.Controls.Add(this.tbEntreFerme);
             this.algoBox.Controls.Add(this.tbEntreOuvert);
-            this.algoBox.Controls.Add(this.button5);
+            this.algoBox.Controls.Add(this.btnNext2);
             this.algoBox.Controls.Add(this.tbRepFer);
             this.algoBox.Controls.Add(this.tbRepOuv);
             this.algoBox.Controls.Add(this.tbNF);
             this.algoBox.Controls.Add(this.tbNO);
             this.algoBox.Controls.Add(this.lbNO);
             this.algoBox.Controls.Add(this.lbNF);
-            this.algoBox.Controls.Add(this.btnVerifO);
-            this.algoBox.Location = new System.Drawing.Point(190, 391);
+            this.algoBox.Controls.Add(this.btnVerif);
+            this.algoBox.Location = new System.Drawing.Point(190, 374);
             this.algoBox.Name = "algoBox";
-            this.algoBox.Size = new System.Drawing.Size(899, 234);
+            this.algoBox.Size = new System.Drawing.Size(899, 251);
             this.algoBox.TabIndex = 24;
             this.algoBox.TabStop = false;
             this.algoBox.Text = "Appliquez l\'algorithme de Dijkstra pour aller du noeud A au noeud B";
@@ -261,28 +261,28 @@
             // 
             // tbEntreFerme
             // 
-            this.tbEntreFerme.Location = new System.Drawing.Point(541, 197);
+            this.tbEntreFerme.Location = new System.Drawing.Point(541, 224);
             this.tbEntreFerme.Name = "tbEntreFerme";
             this.tbEntreFerme.Size = new System.Drawing.Size(199, 20);
             this.tbEntreFerme.TabIndex = 28;
             // 
             // tbEntreOuvert
             // 
-            this.tbEntreOuvert.Location = new System.Drawing.Point(126, 197);
+            this.tbEntreOuvert.Location = new System.Drawing.Point(126, 225);
             this.tbEntreOuvert.Name = "tbEntreOuvert";
             this.tbEntreOuvert.Size = new System.Drawing.Size(199, 20);
             this.tbEntreOuvert.TabIndex = 27;
             // 
-            // button5
+            // btnNext2
             // 
-            this.button5.Location = new System.Drawing.Point(789, 189);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(84, 28);
-            this.button5.TabIndex = 26;
-            this.button5.Text = "Suivant";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Visible = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btnNext2.Location = new System.Drawing.Point(785, 219);
+            this.btnNext2.Name = "btnNext2";
+            this.btnNext2.Size = new System.Drawing.Size(84, 28);
+            this.btnNext2.TabIndex = 26;
+            this.btnNext2.Text = "Suivant";
+            this.btnNext2.UseVisualStyleBackColor = true;
+            this.btnNext2.Visible = false;
+            this.btnNext2.Click += new System.EventHandler(this.btnNext2_Click);
             // 
             // cheminBox
             // 
@@ -308,7 +308,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(228, 49);
+            this.label5.Location = new System.Drawing.Point(228, 27);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(104, 13);
             this.label5.TabIndex = 29;
@@ -316,7 +316,7 @@
             // 
             // btnRes
             // 
-            this.btnRes.Location = new System.Drawing.Point(312, 229);
+            this.btnRes.Location = new System.Drawing.Point(313, 229);
             this.btnRes.Name = "btnRes";
             this.btnRes.Size = new System.Drawing.Size(75, 23);
             this.btnRes.TabIndex = 26;
@@ -337,10 +337,10 @@
             // 
             // rtbResumeArbre
             // 
-            this.rtbResumeArbre.Location = new System.Drawing.Point(221, 77);
+            this.rtbResumeArbre.Location = new System.Drawing.Point(221, 51);
             this.rtbResumeArbre.Name = "rtbResumeArbre";
             this.rtbResumeArbre.ReadOnly = true;
-            this.rtbResumeArbre.Size = new System.Drawing.Size(111, 142);
+            this.rtbResumeArbre.Size = new System.Drawing.Size(111, 168);
             this.rtbResumeArbre.TabIndex = 27;
             this.rtbResumeArbre.Text = "";
             // 
@@ -379,7 +379,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(419, 49);
+            this.label7.Location = new System.Drawing.Point(429, 27);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(32, 13);
             this.label7.TabIndex = 25;
@@ -407,6 +407,7 @@
             this.Controls.Add(this.cheminBox);
             this.Controls.Add(this.algoBox);
             this.Controls.Add(this.pbBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FormD";
             this.Text = "Form1";
             this.pbBox.ResumeLayout(false);
@@ -421,14 +422,14 @@
         }
 
         #endregion
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbNoeudA;
+        private System.Windows.Forms.TextBox tbNoeudB;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TreeView treeView1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnGenerateGraph;
         private System.Windows.Forms.ListBox listBoxgraphe;
-        private System.Windows.Forms.Button btnVerifO;
+        private System.Windows.Forms.Button btnVerif;
         private System.Windows.Forms.Label lbNO;
         private System.Windows.Forms.Label lbNF;
         private System.Windows.Forms.RichTextBox tbNO;
@@ -442,8 +443,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button nxtButton;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnNext1;
+        private System.Windows.Forms.Button btnNext2;
         private System.Windows.Forms.Button btnRes;
         private System.Windows.Forms.TextBox tbEntreFerme;
         private System.Windows.Forms.TextBox tbEntreOuvert;

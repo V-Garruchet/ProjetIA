@@ -101,6 +101,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Graphes\graphe1.txt" />
+    <Content Include="Graphes\graphe2.txt" />
     <Content Include="Images\graphe.png" />
     <Content Include="Images\matAdj.png" />
     <Content Include="Images\parcours.jpg" />
