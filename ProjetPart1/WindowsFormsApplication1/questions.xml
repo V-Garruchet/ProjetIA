@@ -4,13 +4,13 @@
     <Question Id="0">
     <QuestionText>Comment s'appelle M. Salotti ?</QuestionText>
     <Answers>
-      <A>Michel</A>
+      <A>Robert</A>
       <B>Jean-Marc</B>
-      <C>Denis</C>
-      <D>Jacques</D>
+      <C>André</C>
+      <D>Jérôme</D>
     </Answers>
     <GoodAnswer>B</GoodAnswer>
-      <Image></Image>
+      <Image>instructions.png</Image>
     </Question>
 	  
     <Question Id="1">
@@ -22,7 +22,7 @@
       <D>Les mutations de vecteurs</D>
     </Answers>
     <GoodAnswer>A</GoodAnswer>
-      <Image></Image>
+      <Image>reflechir.jpg</Image>
 	</Question>
 	  
 		
@@ -35,7 +35,7 @@
       <D>utilisé en IA pour calculer le nombre de solutions prossibles</D>
     </Answers>
     <GoodAnswer>AC</GoodAnswer>
-    <Image></Image>
+    <Image>reflechir.jpg</Image>
     
 	</Question>
 		
@@ -61,7 +61,7 @@
       <D>La complétude</D>
     </Answers>
     <GoodAnswer>ABD</GoodAnswer>
-      <Image></Image>
+      <Image>reflechir.jpg</Image>
 	</Question>
 		
     <Question Id="5">
@@ -73,7 +73,7 @@
       <D>Last In First Out</D>
     </Answers>
     <GoodAnswer>C</GoodAnswer>
-      <Image></Image>
+      <Image>reflechir.jpg</Image>
 	</Question>
 		
     <Question Id="6">
@@ -85,7 +85,7 @@
       <D>Le meilleur d'abord</D>
     </Answers>
     <GoodAnswer>D</GoodAnswer>
-      <Image></Image>
+      <Image>reflechir.jpg</Image>
 	</Question>
 	  
     <Question Id="7">
@@ -97,7 +97,7 @@
       <D>Si on pose h(N)=1 pour tout N, A* équivalent à Dijkstra</D>
     </Answers>
     <GoodAnswer>AC</GoodAnswer>
-      <Image></Image>
+      <Image>reflechir.jpg</Image>
 	</Question>
 	  
     <Question Id="8">
@@ -109,7 +109,7 @@
       <D>Une matrice de trace et de déterminant égaux</D>
     </Answers>
     <GoodAnswer>A</GoodAnswer>
-      <Image></Image>
+      <Image>reflechir.jpg</Image>
 	</Question>
 	  
     <Question Id="9">
@@ -122,7 +122,7 @@
       <D>Une fonction successeur</D>
     </Answers>
     <GoodAnswer>BD</GoodAnswer>
-      <Image></Image>
+      <Image>reflechir.jpg</Image>
 	</Question>
 		
     <Question Id="10">
@@ -135,7 +135,7 @@
       <D>trouver le chemin le plus court alpha et le chemin le plus long beta</D>
     </Answers>
     <GoodAnswer>A</GoodAnswer>
-      <Image></Image>
+      <Image>reflechir.jpg</Image>
 	</Question>
 	  
     <Question Id="11">
@@ -148,7 +148,7 @@
       <D>Il n'y a pas de limite</D>
     </Answers>
     <GoodAnswer>B</GoodAnswer>
-      <Image></Image>
+      <Image>reflechir.jpg</Image>
 	</Question>
 	  
 		
@@ -161,7 +161,7 @@
       <D>Boston Dynamic</D>
     </Answers>
     <GoodAnswer>D</GoodAnswer>
-    <Image></Image>
+    <Image>reflechir.jpg</Image>
 	</Question>
 		
     <Question Id="13">
@@ -173,7 +173,7 @@
       <D>L'un détecte l'obstacle à son contact, l'autre par système de détection infrarouge</D>
     </Answers>
     <GoodAnswer>D</GoodAnswer>
-      <Image></Image>
+      <Image>reflechir.jpg</Image>
 	</Question>
 		
     <Question Id="14">
@@ -185,7 +185,7 @@
       <D>Le niveau d'énergie</D>
     </Answers>
     <GoodAnswer>C</GoodAnswer>
-      <Image></Image>
+      <Image>reflechir.jpg</Image>
 	</Question>
 		
     <Question Id="15">
@@ -197,7 +197,7 @@
       <D>Leur force en résolution de problèmes</D>
     </Answers>
     <GoodAnswer>A</GoodAnswer>
-      <Image></Image>
+      <Image>reflechir.jpg</Image>
 	</Question>
 		
     <Question Id="16">
@@ -222,7 +222,7 @@
       
     </Answers>
     <GoodAnswer>ABD</GoodAnswer>
-      <Image></Image>
+      <Image>reflechir.jpg</Image>
 	</Question>
 	  
     <Question Id="18">
@@ -234,7 +234,7 @@
       <D>L'arête est une relation entre deux noeuds et l'arc une relation reliant un noeud à lui-même</D>
     </Answers>
     <GoodAnswer>C</GoodAnswer>
-      <Image></Image>
+      <Image>reflechir.jpg</Image>
 	</Question>
 	  
     <Question Id="19">
@@ -246,7 +246,7 @@
       <D>Aucune relation du graphe n'est un arc</D>
     </Answers>
     <GoodAnswer>BD</GoodAnswer>
-      <Image></Image>
+      <Image>reflechir.jpg</Image>
 	</Question>
 		
     <Question Id="20">

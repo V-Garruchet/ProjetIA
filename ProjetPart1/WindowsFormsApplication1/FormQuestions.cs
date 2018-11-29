@@ -52,8 +52,8 @@ namespace WindowsFormsApplication1
             {
                 rep += "D";
             }
-            if(rep==RepQenCours && QRest.Count()!=20)       // La deuxième condition permet de ne pas compter de point sur la question 0 qui sert d'exemple
-            {
+            if(rep==RepQenCours && QRest.Count()!=20  && btVerif.Enabled != false)       // La 3ème condition permet de ne pas compter de point si la réponse est cochée après la vérif
+            {                                                                            // La deuxième condition permet de ne pas compter de point sur la question 0 qui sert d'exemple
                 score += 1;
             }
             if (QRest.Count != 0)                           // On affiche la question suivante car il en reste
@@ -106,6 +106,29 @@ namespace WindowsFormsApplication1
         // Permet de vérifier si notre réponse à la question est juste en mettant en valeur les bonnes (vertes) et mauvaises (rouges) réponses
         private void btVerif_Click(object sender, EventArgs e)
         {
+            string rep = "";
+            if (cbRep1.Checked)
+            {
+                rep += "A";
+            }
+            if (cbRep2.Checked)
+            {
+                rep += "B";
+            }
+            if (cbRep3.Checked)
+            {
+                rep += "C";
+            }
+            if (cbRep4.Checked)
+            {
+                rep += "D";
+            }
+            if (rep == RepQenCours && QRest.Count() != 20) 
+            {
+                score += 1;
+            }
+
+
             if (cbRep1.Checked)
             {
                 cbRep1.ForeColor= Color.Red;

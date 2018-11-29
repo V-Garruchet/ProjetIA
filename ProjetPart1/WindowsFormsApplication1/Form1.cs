@@ -38,6 +38,7 @@ namespace WindowsFormsApplication1
             form1.cbRep2.Text = Q1.Answers[1];
             form1.cbRep3.Text = Q1.Answers[2];
             form1.cbRep4.Text = Q1.Answers[3];
+            form1.pictureBoxQuestion.Image = Image.FromFile("..\\..\\Images\\" + Q1.Image);
             Application.Run(form1);
         }
 

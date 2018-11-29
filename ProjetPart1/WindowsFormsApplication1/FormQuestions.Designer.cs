@@ -172,6 +172,6 @@
         public System.Windows.Forms.CheckBox cbRep3;
         public System.Windows.Forms.CheckBox cbRep2;
         public System.Windows.Forms.CheckBox cbRep1;
-        private System.Windows.Forms.PictureBox pictureBoxQuestion;
+        public System.Windows.Forms.PictureBox pictureBoxQuestion;
     }
 }
