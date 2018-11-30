@@ -131,6 +131,8 @@ namespace Pluscourtchemin
         // Permet de vérifier que les ouverts et fermés entrés par l'utilisateur sont les bons
         private void btnVerif_Click(object sender, EventArgs e)
         {
+            int resultParse;        //sert plus bas dans un TryParse
+
             if (listeFerme.Count() == 0 && listeOuvert.Count() == 0)
             {
                 numinitial = Convert.ToInt32(tbNoeudA.Text);
@@ -197,6 +199,12 @@ namespace Pluscourtchemin
                 }
                 fermes.Add(ligneFer);
 
+                // Si on atteint notre noeud sans avoir eu besoin de parcourir tous les noeuds
+                if(listeFerme[listeFerme.Count()-1]== numfinal)
+                {
+                    btnNext2.Visible = true;
+                    btnVerif.Visible = false;                    
+                }
 
                 // On prépare l'échange du premier terme des ouverts en fermé
                 if (listeOuvert.Count() != 0)
