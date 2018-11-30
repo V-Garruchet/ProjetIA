@@ -87,8 +87,7 @@
             this.lbQuote.Size = new System.Drawing.Size(322, 29);
             this.lbQuote.TabIndex = 5;
             this.lbQuote.Text = "\"La peine emplie mon coeur\"";
-            this.lbQuote.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbQuote.Click += new System.EventHandler(this.lbQuote_Click);
+            this.lbQuote.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // ResultatsPart2
             // 

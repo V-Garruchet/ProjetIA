@@ -102,7 +102,7 @@
             // 
             // treeView1
             // 
-            this.treeView1.Location = new System.Drawing.Point(364, 51);
+            this.treeView1.Location = new System.Drawing.Point(380, 55);
             this.treeView1.Name = "treeView1";
             this.treeView1.Size = new System.Drawing.Size(143, 168);
             this.treeView1.TabIndex = 7;
@@ -196,7 +196,7 @@
             // 
             // tbResPCC
             // 
-            this.tbResPCC.Location = new System.Drawing.Point(81, 203);
+            this.tbResPCC.Location = new System.Drawing.Point(74, 217);
             this.tbResPCC.Name = "tbResPCC";
             this.tbResPCC.ReadOnly = true;
             this.tbResPCC.Size = new System.Drawing.Size(61, 20);
@@ -297,9 +297,9 @@
             this.cheminBox.Controls.Add(this.label7);
             this.cheminBox.Controls.Add(this.tbResPCC);
             this.cheminBox.Controls.Add(this.treeView1);
-            this.cheminBox.Location = new System.Drawing.Point(628, 98);
+            this.cheminBox.Location = new System.Drawing.Point(611, 98);
             this.cheminBox.Name = "cheminBox";
-            this.cheminBox.Size = new System.Drawing.Size(532, 270);
+            this.cheminBox.Size = new System.Drawing.Size(549, 270);
             this.cheminBox.TabIndex = 25;
             this.cheminBox.TabStop = false;
             this.cheminBox.Text = "Arbre pour aller du noeud A au noeud B";
@@ -308,7 +308,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(228, 27);
+            this.label5.Location = new System.Drawing.Point(238, 27);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(104, 13);
             this.label5.TabIndex = 29;
@@ -316,7 +316,7 @@
             // 
             // btnRes
             // 
-            this.btnRes.Location = new System.Drawing.Point(313, 229);
+            this.btnRes.Location = new System.Drawing.Point(325, 229);
             this.btnRes.Name = "btnRes";
             this.btnRes.Size = new System.Drawing.Size(75, 23);
             this.btnRes.TabIndex = 26;
@@ -327,7 +327,7 @@
             // 
             // btnVerifNoeud
             // 
-            this.btnVerifNoeud.Location = new System.Drawing.Point(60, 168);
+            this.btnVerifNoeud.Location = new System.Drawing.Point(57, 175);
             this.btnVerifNoeud.Name = "btnVerifNoeud";
             this.btnVerifNoeud.Size = new System.Drawing.Size(96, 20);
             this.btnVerifNoeud.TabIndex = 27;
@@ -337,16 +337,16 @@
             // 
             // rtbResumeArbre
             // 
-            this.rtbResumeArbre.Location = new System.Drawing.Point(221, 51);
+            this.rtbResumeArbre.Location = new System.Drawing.Point(231, 55);
             this.rtbResumeArbre.Name = "rtbResumeArbre";
             this.rtbResumeArbre.ReadOnly = true;
-            this.rtbResumeArbre.Size = new System.Drawing.Size(111, 168);
+            this.rtbResumeArbre.Size = new System.Drawing.Size(118, 168);
             this.rtbResumeArbre.TabIndex = 27;
             this.rtbResumeArbre.Text = "";
             // 
             // tbDistParent
             // 
-            this.tbDistParent.Location = new System.Drawing.Point(130, 121);
+            this.tbDistParent.Location = new System.Drawing.Point(141, 125);
             this.tbDistParent.Name = "tbDistParent";
             this.tbDistParent.Size = new System.Drawing.Size(42, 20);
             this.tbDistParent.TabIndex = 28;
@@ -356,13 +356,13 @@
             this.lbIndic.AutoSize = true;
             this.lbIndic.Location = new System.Drawing.Point(6, 128);
             this.lbIndic.Name = "lbIndic";
-            this.lbIndic.Size = new System.Drawing.Size(103, 13);
+            this.lbIndic.Size = new System.Drawing.Size(129, 13);
             this.lbIndic.TabIndex = 28;
-            this.lbIndic.Text = "Distance au parent :";
+            this.lbIndic.Text = "Distance au noeud initial :";
             // 
             // tbNoeudEnCours
             // 
-            this.tbNoeudEnCours.Location = new System.Drawing.Point(130, 77);
+            this.tbNoeudEnCours.Location = new System.Drawing.Point(141, 77);
             this.tbNoeudEnCours.Name = "tbNoeudEnCours";
             this.tbNoeudEnCours.Size = new System.Drawing.Size(42, 20);
             this.tbNoeudEnCours.TabIndex = 27;
@@ -370,7 +370,7 @@
             // lbNoeudEnCours
             // 
             this.lbNoeudEnCours.AutoSize = true;
-            this.lbNoeudEnCours.Location = new System.Drawing.Point(6, 80);
+            this.lbNoeudEnCours.Location = new System.Drawing.Point(28, 80);
             this.lbNoeudEnCours.Name = "lbNoeudEnCours";
             this.lbNoeudEnCours.Size = new System.Drawing.Size(89, 13);
             this.lbNoeudEnCours.TabIndex = 26;
@@ -379,7 +379,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(429, 27);
+            this.label7.Location = new System.Drawing.Point(446, 27);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(32, 13);
             this.label7.TabIndex = 25;

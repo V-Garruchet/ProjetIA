@@ -13,9 +13,24 @@ namespace Pluscourtchemin
     public partial class ResultatsPart2 : Form
     {
         public ResultatsPart2(int resultatPart2)
-        {
+        {                     
             InitializeComponent();
             lbScorePart2.Text = resultatPart2.ToString();
+            int score = Int32.Parse(lbScorePart2.Text);
+            if (score == 0)
+            {
+                lbQuote.Text = "La peine emplie mon coeur.";
+            }
+
+            if (score < 3 && score > 0)
+            {
+                lbQuote.Text = "Pas trop mal.";
+            }
+
+            if (score == 3)
+            {
+                lbQuote.Text = "La joie emplie mon coeur.";
+            }
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -23,17 +38,5 @@ namespace Pluscourtchemin
             Close();
         }
 
-        private void lbQuote_Click(object sender, EventArgs e)
-        {
-            if (Int32.Parse(lbScorePart2.Text) < 10)
-            {
-                lbQuote.Text = "La peine emplie mon coeur.";
-            }
-
-            if (Int32.Parse(lbScorePart2.Text) > 10)
-            {
-                lbQuote.Text = "La joie emplie mon coeur.";
-            }
-        }
     }
 }
